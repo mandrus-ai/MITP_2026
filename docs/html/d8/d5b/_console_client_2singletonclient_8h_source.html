@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Edinobogic: Исходный файл singletonclient.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Edinobogic<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Qt client-server educational project</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('../../',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d8/d5b/_console_client_2singletonclient_8h_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ConsoleClient/singletonclient.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d5b/_console_client_2singletonclient_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef SINGLETONCLIENT_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define SINGLETONCLIENT_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d82/class_singleton_client.html">SingletonClient</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d57/class_singleton_client_destroyer.html">SingletonClientDestroyer</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    SingletonClient* <a class="code hl_variable" href="../../dc/d57/class_singleton_client_destroyer.html#ac45f0080ba165d51c2ce0dccb3d08aa7">p_instance</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dc/d57/class_singleton_client_destroyer.html#afe2f645384ec49a9b6f8a9a287bd31f4">   35</a></span>    <a class="code hl_function" href="../../dc/d57/class_singleton_client_destroyer.html#afe2f645384ec49a9b6f8a9a287bd31f4">~SingletonClientDestroyer</a>() { <span class="keyword">delete</span> <a class="code hl_variable" href="../../dc/d57/class_singleton_client_destroyer.html#ac45f0080ba165d51c2ce0dccb3d08aa7">p_instance</a>; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../dc/d57/class_singleton_client_destroyer.html#aa301fde6b087dca2464b2ae8ec139ab9">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d57/class_singleton_client_destroyer.html#aa301fde6b087dca2464b2ae8ec139ab9">initialize</a>(<a class="code hl_class" href="../../d5/d82/class_singleton_client.html">SingletonClient</a>* p) { <a class="code hl_variable" href="../../dc/d57/class_singleton_client_destroyer.html#ac45f0080ba165d51c2ce0dccb3d08aa7">p_instance</a> = p; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">class </span><a class="code hl_class" href="../../d5/d82/class_singleton_client.html">SingletonClient</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    Q_OBJECT</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">static</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>* <a class="code hl_variable" href="../../d5/d82/class_singleton_client.html#a1afdc4cc16a9378ad5f009f80ec64cc2">p_instance</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">static</span> <a class="code hl_friend" href="../../d5/d82/class_singleton_client.html#a350110ff6093e6b575ae3a0cb6f5e5c1">SingletonClientDestroyer</a> <a class="code hl_variable" href="../../d5/d82/class_singleton_client.html#ae75593d98e0545dc2ecb594b8c6694aa">destroyer</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    QTcpSocket* <a class="code hl_variable" href="../../d5/d82/class_singleton_client.html#a09aad68a337156d5948536bbdb21d3e7">m_pSocket</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    QString <a class="code hl_variable" href="../../d5/d82/class_singleton_client.html#a0a4e886d83e5c3591b012b16b34c44e2">m_buffer</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">   86</a></span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a8d8bbff7e8657e6cdb1fed4a5ae8a176">   91</a></span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a8d8bbff7e8657e6cdb1fed4a5ae8a176">SingletonClient</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>&amp;);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a3100e92f86a530fd89a2fd03cc6df65b">   96</a></span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>&amp; <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a3100e92f86a530fd89a2fd03cc6df65b">operator = </a>(<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>&amp;);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a4258281451ae898729c4aaa18220d184">  101</a></span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a4258281451ae898729c4aaa18220d184">~SingletonClient</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="../../d5/d82/class_singleton_client.html#a350110ff6093e6b575ae3a0cb6f5e5c1">SingletonClientDestroyer</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a27e7002d7386698d26f4127939567493">  114</a></span>    <span class="keyword">static</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient</a>* <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a27e7002d7386698d26f4127939567493">getInstance</a>();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a222001e1cf4a7994582167786ffd07c4">  122</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a222001e1cf4a7994582167786ffd07c4">connectToServer</a>(<span class="keyword">const</span> QString&amp; host, quint16 port);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a3004e27579536f1fb9af6271c7dc8e28">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a3004e27579536f1fb9af6271c7dc8e28">disconnectFromServer</a>();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a07876583f2f89d70ff241834ec6f3c93">  134</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a07876583f2f89d70ff241834ec6f3c93">sendMessageToServer</a>(<span class="keyword">const</span> QString&amp; query);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a26d85b2052fb0002931c06745f3e5eca">  141</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a26d85b2052fb0002931c06745f3e5eca">isConnected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#af8ade64c5b61ce3a1ba09cc8505409f9">  150</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#af8ade64c5b61ce3a1ba09cc8505409f9">slotReadyRead</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a68bbae191e1aec25ae0b3c91dc6091c7">  155</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a68bbae191e1aec25ae0b3c91dc6091c7">slotConnected</a>();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#adfdd86c1e6413ba6db9d85e4f65e5147">  160</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#adfdd86c1e6413ba6db9d85e4f65e5147">slotDisconnected</a>();</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a245e939e5d3ab64f8ae09a2c73c0c295">  167</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a245e939e5d3ab64f8ae09a2c73c0c295">slotErrorOccurred</a>(QAbstractSocket::SocketError error);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>signals:</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">  175</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">messageFromServer</a>(<span class="keyword">const</span> QString&amp; msg);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">  180</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">connected</a>();</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">  185</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">disconnected</a>();</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">  192</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">errorOccurred</a>(<span class="keyword">const</span> QString&amp; err);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#endif </span><span class="comment">// SINGLETONCLIENT_H</span></div>
+<div class="ttc" id="aclass_singleton_client_destroyer_html"><div class="ttname"><a href="../../dc/d57/class_singleton_client_destroyer.html">SingletonClientDestroyer</a></div><div class="ttdoc">Вспомогательный класс для удаления SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00023">AuthClient/singletonclient.h:24</a></div></div>
+<div class="ttc" id="aclass_singleton_client_destroyer_html_aa301fde6b087dca2464b2ae8ec139ab9"><div class="ttname"><a href="../../dc/d57/class_singleton_client_destroyer.html#aa301fde6b087dca2464b2ae8ec139ab9">SingletonClientDestroyer::initialize</a></div><div class="ttdeci">void initialize(SingletonClient *p)</div><div class="ttdoc">Инициализирует указатель на экземпляр SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="#l00042">ConsoleClient/singletonclient.h:42</a></div></div>
+<div class="ttc" id="aclass_singleton_client_destroyer_html_ac45f0080ba165d51c2ce0dccb3d08aa7"><div class="ttname"><a href="../../dc/d57/class_singleton_client_destroyer.html#ac45f0080ba165d51c2ce0dccb3d08aa7">SingletonClientDestroyer::p_instance</a></div><div class="ttdeci">SingletonClient * p_instance</div><div class="ttdoc">Указатель на единственный экземпляр SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00026">AuthClient/singletonclient.h:26</a></div></div>
+<div class="ttc" id="aclass_singleton_client_destroyer_html_afe2f645384ec49a9b6f8a9a287bd31f4"><div class="ttname"><a href="../../dc/d57/class_singleton_client_destroyer.html#afe2f645384ec49a9b6f8a9a287bd31f4">SingletonClientDestroyer::~SingletonClientDestroyer</a></div><div class="ttdeci">~SingletonClientDestroyer()</div><div class="ttdoc">Удаляет экземпляр SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="#l00035">ConsoleClient/singletonclient.h:35</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html">SingletonClient</a></div><div class="ttdoc">Singleton-класс сетевого клиента.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00049">AuthClient/singletonclient.h:50</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a07876583f2f89d70ff241834ec6f3c93"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a07876583f2f89d70ff241834ec6f3c93">SingletonClient::sendMessageToServer</a></div><div class="ttdeci">void sendMessageToServer(const QString &amp;query)</div><div class="ttdoc">Отправляет сообщение серверу.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a09aad68a337156d5948536bbdb21d3e7"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a09aad68a337156d5948536bbdb21d3e7">SingletonClient::m_pSocket</a></div><div class="ttdeci">QTcpSocket * m_pSocket</div><div class="ttdoc">TCP-сокет для соединения с сервером.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00057">AuthClient/singletonclient.h:57</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a0a4e886d83e5c3591b012b16b34c44e2"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a0a4e886d83e5c3591b012b16b34c44e2">SingletonClient::m_buffer</a></div><div class="ttdeci">QString m_buffer</div><div class="ttdoc">Буфер для накопления данных, полученных от сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00058">AuthClient/singletonclient.h:58</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a1afdc4cc16a9378ad5f009f80ec64cc2"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a1afdc4cc16a9378ad5f009f80ec64cc2">SingletonClient::p_instance</a></div><div class="ttdeci">static SingletonClient * p_instance</div><div class="ttdoc">Единственный экземпляр SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00054">AuthClient/singletonclient.h:54</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a222001e1cf4a7994582167786ffd07c4"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a222001e1cf4a7994582167786ffd07c4">SingletonClient::connectToServer</a></div><div class="ttdeci">void connectToServer(const QString &amp;host, quint16 port)</div><div class="ttdoc">Подключается к TCP-серверу.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a245e939e5d3ab64f8ae09a2c73c0c295"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a245e939e5d3ab64f8ae09a2c73c0c295">SingletonClient::slotErrorOccurred</a></div><div class="ttdeci">void slotErrorOccurred(QAbstractSocket::SocketError error)</div><div class="ttdoc">Обрабатывает ошибку TCP-сокета.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a26d85b2052fb0002931c06745f3e5eca"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a26d85b2052fb0002931c06745f3e5eca">SingletonClient::isConnected</a></div><div class="ttdeci">bool isConnected() const</div><div class="ttdoc">Проверяет состояние соединения с сервером.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a27e7002d7386698d26f4127939567493"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a27e7002d7386698d26f4127939567493">SingletonClient::getInstance</a></div><div class="ttdeci">static SingletonClient * getInstance()</div><div class="ttdoc">Возвращает единственный экземпляр клиента.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a3004e27579536f1fb9af6271c7dc8e28"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a3004e27579536f1fb9af6271c7dc8e28">SingletonClient::disconnectFromServer</a></div><div class="ttdeci">void disconnectFromServer()</div><div class="ttdoc">Отключается от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a3100e92f86a530fd89a2fd03cc6df65b"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a3100e92f86a530fd89a2fd03cc6df65b">SingletonClient::operator=</a></div><div class="ttdeci">SingletonClient &amp; operator=(SingletonClient &amp;)</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a350110ff6093e6b575ae3a0cb6f5e5c1"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a350110ff6093e6b575ae3a0cb6f5e5c1">SingletonClient::SingletonClientDestroyer</a></div><div class="ttdeci">friend class SingletonClientDestroyer</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00065">AuthClient/singletonclient.h:65</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a4258281451ae898729c4aaa18220d184"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a4258281451ae898729c4aaa18220d184">SingletonClient::~SingletonClient</a></div><div class="ttdeci">~SingletonClient()</div><div class="ttdoc">Закрывает соединение и уничтожает клиент.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a55280c4c20aecfc35e0f824ed7968703"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">SingletonClient::disconnected</a></div><div class="ttdeci">void disconnected()</div><div class="ttdoc">Сигнал об отключении от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a666f928cce91cbb112e5f6b5f1667b3a"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">SingletonClient::connected</a></div><div class="ttdeci">void connected()</div><div class="ttdoc">Сигнал об успешном подключении к серверу.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a68bbae191e1aec25ae0b3c91dc6091c7"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a68bbae191e1aec25ae0b3c91dc6091c7">SingletonClient::slotConnected</a></div><div class="ttdeci">void slotConnected()</div><div class="ttdoc">Обрабатывает успешное подключение к серверу.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a89ef2a4126710e01b3e8c7632496ea0c"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a89ef2a4126710e01b3e8c7632496ea0c">SingletonClient::SingletonClient</a></div><div class="ttdeci">SingletonClient(QObject *parent=nullptr)</div><div class="ttdoc">Создаёт TCP-сокет и подключает его сигналы к слотам клиента.</div><div class="ttdef"><b>Определения</b> <a href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00011">AuthClient/singletonclient.cpp:11</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a8d8bbff7e8657e6cdb1fed4a5ae8a176"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a8d8bbff7e8657e6cdb1fed4a5ae8a176">SingletonClient::SingletonClient</a></div><div class="ttdeci">SingletonClient(const SingletonClient &amp;)</div><div class="ttdoc">Запрещённый конструктор копирования.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_aa2ec58e445b4185bd82034031c30feac"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">SingletonClient::messageFromServer</a></div><div class="ttdeci">void messageFromServer(const QString &amp;msg)</div><div class="ttdoc">Сигнал о получении сообщения от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_ac8e7ee3e0024543617e259670cf35ec9"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">SingletonClient::errorOccurred</a></div><div class="ttdeci">void errorOccurred(const QString &amp;err)</div><div class="ttdoc">Сигнал об ошибке соединения.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_adfdd86c1e6413ba6db9d85e4f65e5147"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#adfdd86c1e6413ba6db9d85e4f65e5147">SingletonClient::slotDisconnected</a></div><div class="ttdeci">void slotDisconnected()</div><div class="ttdoc">Обрабатывает отключение от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_ae75593d98e0545dc2ecb594b8c6694aa"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#ae75593d98e0545dc2ecb594b8c6694aa">SingletonClient::destroyer</a></div><div class="ttdeci">static SingletonClientDestroyer destroyer</div><div class="ttdoc">Объект, отвечающий за удаление SingletonClient.</div><div class="ttdef"><b>Определения</b> <a href="../../dc/de7/_auth_client_2singletonclient_8h_source.html#l00055">AuthClient/singletonclient.h:55</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_af8ade64c5b61ce3a1ba09cc8505409f9"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#af8ade64c5b61ce3a1ba09cc8505409f9">SingletonClient::slotReadyRead</a></div><div class="ttdeci">void slotReadyRead()</div><div class="ttdoc">Читает данные, полученные от сервера.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../dir_ea8a7db4b6eadeadd186de67eb8e430a.html">ConsoleClient</a></li><li class="navelem"><a href="../../d8/d5b/_console_client_2singletonclient_8h.html">singletonclient.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

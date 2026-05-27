@@ -1,0 +1,16 @@
+digraph "removeOnlineUser"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="removeOnlineUser",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Удаляет пользователя из списка онлайн по дескриптору отключённого сокета."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="MyTcpServer::slotClientDisconnected",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dab/class_my_tcp_server.html#a3e040c49dbefd65b9a58ab662fc9f7a2",tooltip="Обрабатывает отключение клиента и освобождает сокет."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="MyTcpServer::slotNewConnection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dab/class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc",tooltip="Обрабатывает новое входящее клиентское подключение."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="MyTcpServer::MyTcpServer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/dab/class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4",tooltip="Создаёт сервер, запускает прослушивание порта и подключает базу данных."];
+}

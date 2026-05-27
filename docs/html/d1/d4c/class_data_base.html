@@ -1,0 +1,2607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Edinobogic: Класс DataBase</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Edinobogic<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Qt client-server educational project</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('../../',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d1/d4c/class_data_base.html','../../','d1/d6b/class_data_base-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс DataBase</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Статический класс для доступа к базе данных сервера.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф связей класса DataBase:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aff05cbbb47abbde12780f7366b256726" id="r_aff05cbbb47abbde12780f7366b256726"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aff05cbbb47abbde12780f7366b256726">addUserCoins</a> (int userId, int amount)</td></tr>
+<tr class="memdesc:aff05cbbb47abbde12780f7366b256726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет монеты пользователю.  <br /></td></tr>
+<tr class="memitem:ac217b3b1964f77ebfe3ee7feb053fcfd" id="r_ac217b3b1964f77ebfe3ee7feb053fcfd"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ac217b3b1964f77ebfe3ee7feb053fcfd">authenticateUser</a> (const QString &amp;login, const QString &amp;password)</td></tr>
+<tr class="memdesc:ac217b3b1964f77ebfe3ee7feb053fcfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет логин и пароль пользователя.  <br /></td></tr>
+<tr class="memitem:a456e55b6555ae35e0b54e26d4635839c" id="r_a456e55b6555ae35e0b54e26d4635839c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a456e55b6555ae35e0b54e26d4635839c">connect</a> ()</td></tr>
+<tr class="memdesc:a456e55b6555ae35e0b54e26d4635839c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подключается к SQLite-базе данных и создаёт необходимые таблицы.  <br /></td></tr>
+<tr class="memitem:a208cc3afd0b03988366c4aa0ae8f7cf9" id="r_a208cc3afd0b03988366c4aa0ae8f7cf9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a208cc3afd0b03988366c4aa0ae8f7cf9">disconnect</a> ()</td></tr>
+<tr class="memdesc:a208cc3afd0b03988366c4aa0ae8f7cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрывает активное соединение с базой данных.  <br /></td></tr>
+<tr class="memitem:aec073a8c825d0a4cbd3c597776d17eac" id="r_aec073a8c825d0a4cbd3c597776d17eac"><td class="memItemLeft">static QSqlDatabase&#160;</td><td class="memItemRight"><a class="el" href="#aec073a8c825d0a4cbd3c597776d17eac">getDatabase</a> ()</td></tr>
+<tr class="memdesc:aec073a8c825d0a4cbd3c597776d17eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущее соединение с базой данных.  <br /></td></tr>
+<tr class="memitem:ac1f418bd0885a13660a943b213d94373" id="r_ac1f418bd0885a13660a943b213d94373"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ac1f418bd0885a13660a943b213d94373">getUserBackground</a> (int userId)</td></tr>
+<tr class="memdesc:ac1f418bd0885a13660a943b213d94373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает идентификатор выбранного фона пользователя.  <br /></td></tr>
+<tr class="memitem:acf6b5b4d17b03de96d29d7f6f7ac70cc" id="r_acf6b5b4d17b03de96d29d7f6f7ac70cc"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#acf6b5b4d17b03de96d29d7f6f7ac70cc">getUserCoins</a> (int userId)</td></tr>
+<tr class="memdesc:acf6b5b4d17b03de96d29d7f6f7ac70cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество монет пользователя.  <br /></td></tr>
+<tr class="memitem:a67529d7837586d787a0d902214972a6d" id="r_a67529d7837586d787a0d902214972a6d"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a67529d7837586d787a0d902214972a6d">getUserId</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a67529d7837586d787a0d902214972a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает идентификатор пользователя по логину.  <br /></td></tr>
+<tr class="memitem:ac6553cbda352ac93bb4ada269f97d930" id="r_ac6553cbda352ac93bb4ada269f97d930"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ac6553cbda352ac93bb4ada269f97d930">getUserLevel</a> (int userId)</td></tr>
+<tr class="memdesc:ac6553cbda352ac93bb4ada269f97d930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает уровень пользователя.  <br /></td></tr>
+<tr class="memitem:a5cfd221fa7e8019ec32b7161ec43ecbc" id="r_a5cfd221fa7e8019ec32b7161ec43ecbc"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a5cfd221fa7e8019ec32b7161ec43ecbc">getUserScore</a> (int userId)</td></tr>
+<tr class="memdesc:a5cfd221fa7e8019ec32b7161ec43ecbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество очков пользователя.  <br /></td></tr>
+<tr class="memitem:aa55351bb129792a42afeace31c424982" id="r_aa55351bb129792a42afeace31c424982"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#aa55351bb129792a42afeace31c424982">getUserSkin</a> (int userId)</td></tr>
+<tr class="memdesc:aa55351bb129792a42afeace31c424982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает идентификатор выбранного скина пользователя.  <br /></td></tr>
+<tr class="memitem:a6bc1dc9336aae01b0e203604e809fee4" id="r_a6bc1dc9336aae01b0e203604e809fee4"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a6bc1dc9336aae01b0e203604e809fee4">getUserXP</a> (int userId)</td></tr>
+<tr class="memdesc:a6bc1dc9336aae01b0e203604e809fee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество опыта пользователя.  <br /></td></tr>
+<tr class="memitem:a4000cb61524329ce49bf82d83e7fc1e4" id="r_a4000cb61524329ce49bf82d83e7fc1e4"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a4000cb61524329ce49bf82d83e7fc1e4">registerUser</a> (const QString &amp;login, const QString &amp;password, const QString &amp;displayName)</td></tr>
+<tr class="memdesc:a4000cb61524329ce49bf82d83e7fc1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрирует нового пользователя.  <br /></td></tr>
+<tr class="memitem:af9d00bbd4905f61b56ff90964152aa60" id="r_af9d00bbd4905f61b56ff90964152aa60"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#af9d00bbd4905f61b56ff90964152aa60">savePlayerData</a> (int userId, int score, int coins, int level, int xp)</td></tr>
+<tr class="memdesc:af9d00bbd4905f61b56ff90964152aa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет основные игровые данные пользователя одним запросом.  <br /></td></tr>
+<tr class="memitem:ab31109646fc1c0a824101422443cfc81" id="r_ab31109646fc1c0a824101422443cfc81"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab31109646fc1c0a824101422443cfc81">updateUserCoins</a> (int userId, int newCoins)</td></tr>
+<tr class="memdesc:ab31109646fc1c0a824101422443cfc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает новое количество монет пользователя.  <br /></td></tr>
+<tr class="memitem:ab6018a94b23e1af6a58b1c10f3239f7e" id="r_ab6018a94b23e1af6a58b1c10f3239f7e"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab6018a94b23e1af6a58b1c10f3239f7e">updateUserLevel</a> (int userId, int level, int xp)</td></tr>
+<tr class="memdesc:ab6018a94b23e1af6a58b1c10f3239f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет уровень и опыт пользователя.  <br /></td></tr>
+<tr class="memitem:a84724302385617fb3508011d7c2185eb" id="r_a84724302385617fb3508011d7c2185eb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a84724302385617fb3508011d7c2185eb">updateUserScore</a> (int userId, int newScore)</td></tr>
+<tr class="memdesc:a84724302385617fb3508011d7c2185eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет количество очков пользователя.  <br /></td></tr>
+<tr class="memitem:a5b631537fe09a95075c841398978277f" id="r_a5b631537fe09a95075c841398978277f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a5b631537fe09a95075c841398978277f">userExists</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a5b631537fe09a95075c841398978277f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет существование пользователя по логину.  <br /></td></tr>
+<tr id="pub-static-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Достижения</div></td></tr>
+<tr class="memitem:ac00a9dd62f44c4856b217126ce997b78" id="r_ac00a9dd62f44c4856b217126ce997b78"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#ac00a9dd62f44c4856b217126ce997b78">getUserAchievements</a> (int userId)</td></tr>
+<tr class="memdesc:ac00a9dd62f44c4856b217126ce997b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает список достижений пользователя в строковом формате.  <br /></td></tr>
+<tr class="memitem:a5d1f24912f3e7e8a9a5dae5ad21367f6" id="r_a5d1f24912f3e7e8a9a5dae5ad21367f6"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a5d1f24912f3e7e8a9a5dae5ad21367f6">updateAchievementProgress</a> (int userId, int achId, int progress, bool unlocked)</td></tr>
+<tr class="memdesc:a5d1f24912f3e7e8a9a5dae5ad21367f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт или обновляет прогресс достижения пользователя.  <br /></td></tr>
+<tr id="pub-static-methods-1" class="groupHeader"><td colspan="2"><div class="groupHeader">Магазин и таблица лидеров</div></td></tr>
+<tr class="memitem:acf3ba04f2c1eb10eb7a8c1a18a0a375f" id="r_acf3ba04f2c1eb10eb7a8c1a18a0a375f"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#acf3ba04f2c1eb10eb7a8c1a18a0a375f">getShopData</a> (int userId)</td></tr>
+<tr class="memdesc:acf3ba04f2c1eb10eb7a8c1a18a0a375f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает данные магазина и инвентаря пользователя.  <br /></td></tr>
+<tr class="memitem:aa2ac935d4dcd7812a9d9a95d1f4d20f7" id="r_aa2ac935d4dcd7812a9d9a95d1f4d20f7"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa2ac935d4dcd7812a9d9a95d1f4d20f7">buyItem</a> (int userId, int itemId, QString itemType)</td></tr>
+<tr class="memdesc:aa2ac935d4dcd7812a9d9a95d1f4d20f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Покупает предмет магазина для пользователя.  <br /></td></tr>
+<tr class="memitem:ac25b891a7b63d6a3b9d63ffddc6ae602" id="r_ac25b891a7b63d6a3b9d63ffddc6ae602"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ac25b891a7b63d6a3b9d63ffddc6ae602">equipItem</a> (int userId, int itemId, QString itemType)</td></tr>
+<tr class="memdesc:ac25b891a7b63d6a3b9d63ffddc6ae602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выбирает купленный предмет как активный.  <br /></td></tr>
+<tr class="memitem:a735e5fdf28d07d3e618434168ce6efaa" id="r_a735e5fdf28d07d3e618434168ce6efaa"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a735e5fdf28d07d3e618434168ce6efaa">getLeaderboard</a> ()</td></tr>
+<tr class="memdesc:a735e5fdf28d07d3e618434168ce6efaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует таблицу лидеров по очкам.  <br /></td></tr>
+<tr class="memitem:a0abe72ad8551fac2c7413129d396dab9" id="r_a0abe72ad8551fac2c7413129d396dab9"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a0abe72ad8551fac2c7413129d396dab9">getUserDisplayName</a> (int userId)</td></tr>
+<tr class="memdesc:a0abe72ad8551fac2c7413129d396dab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает отображаемое имя пользователя.  <br /></td></tr>
+<tr id="pub-static-methods-2" class="groupHeader"><td colspan="2"><div class="groupHeader">Административная панель</div></td></tr>
+<tr class="memitem:a40d2d22b57a53d6116193d793eccc61d" id="r_a40d2d22b57a53d6116193d793eccc61d"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a40d2d22b57a53d6116193d793eccc61d">getUserRole</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a40d2d22b57a53d6116193d793eccc61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает роль пользователя.  <br /></td></tr>
+<tr class="memitem:a28e89384d538974cbc1a58c03e0f749a" id="r_a28e89384d538974cbc1a58c03e0f749a"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a28e89384d538974cbc1a58c03e0f749a">makeAdmin</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a28e89384d538974cbc1a58c03e0f749a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначает пользователю роль администратора.  <br /></td></tr>
+<tr class="memitem:a152ecb96b38bafb6d1abde6fb89ac5f9" id="r_a152ecb96b38bafb6d1abde6fb89ac5f9"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a152ecb96b38bafb6d1abde6fb89ac5f9">getAllUsersForAdmin</a> ()</td></tr>
+<tr class="memdesc:a152ecb96b38bafb6d1abde6fb89ac5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает список всех пользователей для административной панели.  <br /></td></tr>
+<tr class="memitem:a8f91cca0d1b68e68872f2926e35fa621" id="r_a8f91cca0d1b68e68872f2926e35fa621"><td class="memItemLeft">static QString&#160;</td><td class="memItemRight"><a class="el" href="#a8f91cca0d1b68e68872f2926e35fa621">getAdminGameStats</a> ()</td></tr>
+<tr class="memdesc:a8f91cca0d1b68e68872f2926e35fa621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает общую статистику всей игры для панели администратора.  <br /></td></tr>
+<tr class="memitem:ab7b6d83ebdf11db8996f772310601f21" id="r_ab7b6d83ebdf11db8996f772310601f21"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ab7b6d83ebdf11db8996f772310601f21">setUserRole</a> (const QString &amp;login, const QString &amp;role)</td></tr>
+<tr class="memdesc:ab7b6d83ebdf11db8996f772310601f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет роль пользователя.  <br /></td></tr>
+<tr class="memitem:a48e26be9648c9728f6373949b96135dc" id="r_a48e26be9648c9728f6373949b96135dc"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a48e26be9648c9728f6373949b96135dc">setUserPassword</a> (const QString &amp;login, const QString &amp;password)</td></tr>
+<tr class="memdesc:a48e26be9648c9728f6373949b96135dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменяет пароль пользователя.  <br /></td></tr>
+<tr class="memitem:ad205fa19b4b9bde5c9f71f4a04ecd45f" id="r_ad205fa19b4b9bde5c9f71f4a04ecd45f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#ad205fa19b4b9bde5c9f71f4a04ecd45f">isUserBanned</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:ad205fa19b4b9bde5c9f71f4a04ecd45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, заблокирован ли пользователь.  <br /></td></tr>
+<tr class="memitem:a2771101ad155f1ad67e93a66e2d7f58c" id="r_a2771101ad155f1ad67e93a66e2d7f58c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2771101ad155f1ad67e93a66e2d7f58c">banUser</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a2771101ad155f1ad67e93a66e2d7f58c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блокирует пользователя.  <br /></td></tr>
+<tr class="memitem:a5d24d5b18964c9780eefe76b98efc321" id="r_a5d24d5b18964c9780eefe76b98efc321"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a5d24d5b18964c9780eefe76b98efc321">unbanUser</a> (const QString &amp;login)</td></tr>
+<tr class="memdesc:a5d24d5b18964c9780eefe76b98efc321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Снимает блокировку с пользователя.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:afaefc7539a2749f748e4da979f6d7ce8" id="r_afaefc7539a2749f748e4da979f6d7ce8"><td class="memItemLeft">static QSqlDatabase&#160;</td><td class="memItemRight"><a class="el" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a></td></tr>
+<tr class="memdesc:afaefc7539a2749f748e4da979f6d7ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общее соединение с базой данных, используемое всеми статическими методами.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Статический класс для доступа к базе данных сервера. </p>
+<p>Класс инкапсулирует работу с таблицами пользователей, достижений, купленных скинов и фонов. Все методы являются статическими, поэтому объект <a class="el" href="../../d1/d4c/class_data_base.html" title="Статический класс для доступа к базе данных сервера.">DataBase</a> создавать не нужно. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00028">28</a></p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="aff05cbbb47abbde12780f7366b256726" name="aff05cbbb47abbde12780f7366b256726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff05cbbb47abbde12780f7366b256726">&#9670;&#160;</a></span>addUserCoins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::addUserCoins </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет монеты пользователю. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">amount</td><td>Количество монет, которое нужно прибавить. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00411">411</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  412</span>    {</div>
+<div class="line"><span class="lineno">  413</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  414</span> </div>
+<div class="line"><span class="lineno">  415</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  416</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET coins = coins + :amount WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  417</span>        query.bindValue(<span class="stringliteral">&quot;:amount&quot;</span>, amount);</div>
+<div class="line"><span class="lineno">  418</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  419</span> </div>
+<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  421</span>    }</div>
+<div class="ttc" id="aclass_data_base_html_afaefc7539a2749f748e4da979f6d7ce8"><div class="ttname"><a href="#afaefc7539a2749f748e4da979f6d7ce8">DataBase::db</a></div><div class="ttdeci">static QSqlDatabase db</div><div class="ttdoc">Общее соединение с базой данных, используемое всеми статическими методами.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l01020">dataBase.h:1020</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac217b3b1964f77ebfe3ee7feb053fcfd" name="ac217b3b1964f77ebfe3ee7feb053fcfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac217b3b1964f77ebfe3ee7feb053fcfd">&#9670;&#160;</a></span>authenticateUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::authenticateUser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет логин и пароль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code>, если пара логин/пароль найдена в базе; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00234">234</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  235</span>    {</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  239</span>        query.prepare(<span class="stringliteral">&quot;SELECT id FROM users WHERE login = :login AND password = :password&quot;</span>);</div>
+<div class="line"><span class="lineno">  240</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  241</span>        query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, password.trimmed());</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>        <span class="keywordflow">if</span> (!query.exec()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  244</span>        <span class="keywordflow">return</span> query.next();</div>
+<div class="line"><span class="lineno">  245</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a> и <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="a2771101ad155f1ad67e93a66e2d7f58c" name="a2771101ad155f1ad67e93a66e2d7f58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2771101ad155f1ad67e93a66e2d7f58c">&#9670;&#160;</a></span>banUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::banUser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Блокирует пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешной блокировке; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00986">986</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  987</span>    {</div>
+<div class="line"><span class="lineno">  988</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  989</span> </div>
+<div class="line"><span class="lineno">  990</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  991</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET banned = 1 WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  992</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  993</span> </div>
+<div class="line"><span class="lineno">  994</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  995</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a id="aa2ac935d4dcd7812a9d9a95d1f4d20f7" name="aa2ac935d4dcd7812a9d9a95d1f4d20f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ac935d4dcd7812a9d9a95d1f4d20f7">&#9670;&#160;</a></span>buyItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::buyItem </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>itemId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>itemType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Покупает предмет магазина для пользователя. </p>
+<p>Метод проверяет тип предмета, цену и баланс пользователя. После покупки списывает монеты и добавляет предмет в таблицу владения.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">itemId</td><td>Идентификатор предмета. </td></tr>
+    <tr><td class="paramname">itemType</td><td>Тип предмета: <code>skin</code> или <code>bg</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешной покупке; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00612">612</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  613</span>    {</div>
+<div class="line"><span class="lineno">  614</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  615</span> </div>
+<div class="line"><span class="lineno">  616</span>        <span class="keywordtype">int</span> price = 0;</div>
+<div class="line"><span class="lineno">  617</span>        <span class="keywordflow">if</span> (itemType == <span class="stringliteral">&quot;skin&quot;</span>)</div>
+<div class="line"><span class="lineno">  618</span>        {</div>
+<div class="line"><span class="lineno">  619</span>            <span class="keywordflow">if</span> (itemId == 1) price = 100;</div>
+<div class="line"><span class="lineno">  620</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (itemId == 2) price = 250;</div>
+<div class="line"><span class="lineno">  621</span>            <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  622</span>        }</div>
+<div class="line"><span class="lineno">  623</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (itemType == <span class="stringliteral">&quot;bg&quot;</span>)</div>
+<div class="line"><span class="lineno">  624</span>        {</div>
+<div class="line"><span class="lineno">  625</span>            <span class="keywordflow">if</span> (itemId == 101) price = 50;</div>
+<div class="line"><span class="lineno">  626</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (itemId == 102) price = 100;</div>
+<div class="line"><span class="lineno">  627</span>            <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  628</span>        }</div>
+<div class="line"><span class="lineno">  629</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  630</span> </div>
+<div class="line"><span class="lineno">  631</span>        QSqlQuery check(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  632</span>        check.prepare(<span class="stringliteral">&quot;SELECT coins FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  633</span>        check.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  634</span>        <span class="keywordflow">if</span> (!check.exec() || !check.next()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  635</span> </div>
+<div class="line"><span class="lineno">  636</span>        <span class="keywordtype">int</span> coins = check.value(0).toInt();</div>
+<div class="line"><span class="lineno">  637</span>        <span class="keywordflow">if</span> (coins &lt; price) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  638</span> </div>
+<div class="line"><span class="lineno">  639</span>        QSqlQuery update(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  640</span>        update.prepare(<span class="stringliteral">&quot;UPDATE users SET coins = coins - :price WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  641</span>        update.bindValue(<span class="stringliteral">&quot;:price&quot;</span>, price);</div>
+<div class="line"><span class="lineno">  642</span>        update.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  643</span>        <span class="keywordflow">if</span> (!update.exec()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  644</span> </div>
+<div class="line"><span class="lineno">  645</span>        QString table = (itemType == <span class="stringliteral">&quot;skin&quot;</span>) ? <span class="stringliteral">&quot;user_skins&quot;</span> : <span class="stringliteral">&quot;user_backgrounds&quot;</span>;</div>
+<div class="line"><span class="lineno">  646</span>        QString column = (itemType == <span class="stringliteral">&quot;skin&quot;</span>) ? <span class="stringliteral">&quot;skin_id&quot;</span> : <span class="stringliteral">&quot;bg_id&quot;</span>;</div>
+<div class="line"><span class="lineno">  647</span> </div>
+<div class="line"><span class="lineno">  648</span>        QSqlQuery insert(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  649</span>        insert.prepare(QString(<span class="stringliteral">&quot;INSERT INTO %1 (user_id, %2) VALUES (:user_id, :item_id)&quot;</span>)</div>
+<div class="line"><span class="lineno">  650</span>                           .arg(table).arg(column));</div>
+<div class="line"><span class="lineno">  651</span>        insert.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  652</span>        insert.bindValue(<span class="stringliteral">&quot;:item_id&quot;</span>, itemId);</div>
+<div class="line"><span class="lineno">  653</span> </div>
+<div class="line"><span class="lineno">  654</span>        <span class="keywordflow">return</span> insert.exec();</div>
+<div class="line"><span class="lineno">  655</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+
+</div>
+</div>
+<a id="a456e55b6555ae35e0b54e26d4635839c" name="a456e55b6555ae35e0b54e26d4635839c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456e55b6555ae35e0b54e26d4635839c">&#9670;&#160;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::connect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Подключается к SQLite-базе данных и создаёт необходимые таблицы. </p>
+<p>Метод открывает соединение с именем <code>main_connection</code>. Если базы или таблиц ещё нет, они создаются автоматически в каталоге <code>db_data</code> рядом с исполняемым файлом.</p>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code>, если соединение открыто и основная таблица создана успешно; <code>false</code> при ошибке открытия базы или создания таблицы пользователей. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00040">40</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (!QSqlDatabase::contains(<span class="stringliteral">&quot;main_connection&quot;</span>))</div>
+<div class="line"><span class="lineno">   43</span>        {</div>
+<div class="line"><span class="lineno">   44</span>            <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a> = QSqlDatabase::addDatabase(<span class="stringliteral">&quot;QSQLITE&quot;</span>, <span class="stringliteral">&quot;main_connection&quot;</span>);</div>
+<div class="line"><span class="lineno">   45</span>            <span class="comment">// РАБОЧИЙ ПУТЬ - как было раньше</span></div>
+<div class="line"><span class="lineno">   46</span>            QString dbDir = QCoreApplication::applicationDirPath() + <span class="stringliteral">&quot;/db_data&quot;</span>;</div>
+<div class="line"><span class="lineno">   47</span>            QDir().mkpath(dbDir);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>            QString dbPath = dbDir + <span class="stringliteral">&quot;/server_database.db&quot;</span>;</div>
+<div class="line"><span class="lineno">   50</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;DB path:&quot;</span> &lt;&lt; dbPath;</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.setDatabaseName(dbPath);        }</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   54</span>        {</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a> = QSqlDatabase::database(<span class="stringliteral">&quot;main_connection&quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.open())</div>
+<div class="line"><span class="lineno">   59</span>        {</div>
+<div class="line"><span class="lineno">   60</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Database open error:&quot;</span> &lt;&lt; <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.lastError().text();</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        QString createTable =</div>
+<div class="line"><span class="lineno">   67</span>            <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS users (&quot;</span></div>
+<div class="line"><span class="lineno">   68</span>            <span class="stringliteral">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT,&quot;</span></div>
+<div class="line"><span class="lineno">   69</span>            <span class="stringliteral">&quot;login TEXT UNIQUE NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">   70</span>            <span class="stringliteral">&quot;display_name TEXT,&quot;</span></div>
+<div class="line"><span class="lineno">   71</span>            <span class="stringliteral">&quot;password TEXT NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">   72</span>            <span class="stringliteral">&quot;role TEXT DEFAULT &#39;player&#39;,&quot;</span></div>
+<div class="line"><span class="lineno">   73</span>            <span class="stringliteral">&quot;banned INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">   74</span>            <span class="stringliteral">&quot;score INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">   75</span>            <span class="stringliteral">&quot;coins INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">   76</span>            <span class="stringliteral">&quot;level INTEGER DEFAULT 1,&quot;</span></div>
+<div class="line"><span class="lineno">   77</span>            <span class="stringliteral">&quot;xp INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">   78</span>            <span class="stringliteral">&quot;skin INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">   79</span>            <span class="stringliteral">&quot;background INTEGER DEFAULT 100,&quot;</span></div>
+<div class="line"><span class="lineno">   80</span>            <span class="stringliteral">&quot;created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP&quot;</span></div>
+<div class="line"><span class="lineno">   81</span>            <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">if</span> (!query.exec(createTable))</div>
+<div class="line"><span class="lineno">   84</span>        {</div>
+<div class="line"><span class="lineno">   85</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Create table error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   87</span>        }</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>        QSqlQuery alterRole(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">   90</span>        alterRole.exec(<span class="stringliteral">&quot;ALTER TABLE users ADD COLUMN role TEXT DEFAULT &#39;player&#39;&quot;</span>);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>        QSqlQuery alterDisplayName(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">   93</span>        alterDisplayName.exec(<span class="stringliteral">&quot;ALTER TABLE users ADD COLUMN display_name TEXT&quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        QSqlQuery alterBanned(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">   96</span>        alterBanned.exec(<span class="stringliteral">&quot;ALTER TABLE users ADD COLUMN banned INTEGER DEFAULT 0&quot;</span>);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>        QString createAchievementsTable =</div>
+<div class="line"><span class="lineno">  100</span>            <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS achievements (&quot;</span></div>
+<div class="line"><span class="lineno">  101</span>            <span class="stringliteral">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT,&quot;</span></div>
+<div class="line"><span class="lineno">  102</span>            <span class="stringliteral">&quot;user_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  103</span>            <span class="stringliteral">&quot;achievement_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  104</span>            <span class="stringliteral">&quot;unlocked BOOLEAN DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">  105</span>            <span class="stringliteral">&quot;progress INTEGER DEFAULT 0,&quot;</span></div>
+<div class="line"><span class="lineno">  106</span>            <span class="stringliteral">&quot;unlocked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,&quot;</span></div>
+<div class="line"><span class="lineno">  107</span>            <span class="stringliteral">&quot;FOREIGN KEY(user_id) REFERENCES users(id),&quot;</span></div>
+<div class="line"><span class="lineno">  108</span>            <span class="stringliteral">&quot;UNIQUE(user_id, achievement_id)&quot;</span></div>
+<div class="line"><span class="lineno">  109</span>            <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (!query.exec(createAchievementsTable))</div>
+<div class="line"><span class="lineno">  112</span>        {</div>
+<div class="line"><span class="lineno">  113</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Create achievements table error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        QString createUserSkinsTable =</div>
+<div class="line"><span class="lineno">  117</span>            <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS user_skins (&quot;</span></div>
+<div class="line"><span class="lineno">  118</span>            <span class="stringliteral">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT,&quot;</span></div>
+<div class="line"><span class="lineno">  119</span>            <span class="stringliteral">&quot;user_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  120</span>            <span class="stringliteral">&quot;skin_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  121</span>            <span class="stringliteral">&quot;FOREIGN KEY(user_id) REFERENCES users(id),&quot;</span></div>
+<div class="line"><span class="lineno">  122</span>            <span class="stringliteral">&quot;UNIQUE(user_id, skin_id)&quot;</span></div>
+<div class="line"><span class="lineno">  123</span>            <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (!query.exec(createUserSkinsTable))</div>
+<div class="line"><span class="lineno">  126</span>        {</div>
+<div class="line"><span class="lineno">  127</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Create user skins table error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  128</span>        }</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>        QString createUserBackgroundsTable =</div>
+<div class="line"><span class="lineno">  131</span>            <span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS user_backgrounds (&quot;</span></div>
+<div class="line"><span class="lineno">  132</span>            <span class="stringliteral">&quot;id INTEGER PRIMARY KEY AUTOINCREMENT,&quot;</span></div>
+<div class="line"><span class="lineno">  133</span>            <span class="stringliteral">&quot;user_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  134</span>            <span class="stringliteral">&quot;bg_id INTEGER NOT NULL,&quot;</span></div>
+<div class="line"><span class="lineno">  135</span>            <span class="stringliteral">&quot;FOREIGN KEY(user_id) REFERENCES users(id),&quot;</span></div>
+<div class="line"><span class="lineno">  136</span>            <span class="stringliteral">&quot;UNIQUE(user_id, bg_id)&quot;</span></div>
+<div class="line"><span class="lineno">  137</span>            <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">if</span> (!query.exec(createUserBackgroundsTable))</div>
+<div class="line"><span class="lineno">  140</span>        {</div>
+<div class="line"><span class="lineno">  141</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Create user backgrounds table error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Database connected successfully&quot;</span>;</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00045">ServerDatabaseTest::initTestCase()</a>, <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer::MyTcpServer()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00077">ServerDatabaseTest::test_database_connection_and_tables()</a>.</p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+<a id="a208cc3afd0b03988366c4aa0ae8f7cf9" name="a208cc3afd0b03988366c4aa0ae8f7cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208cc3afd0b03988366c4aa0ae8f7cf9">&#9670;&#160;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataBase::disconnect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Закрывает активное соединение с базой данных. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00151">151</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>    {</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen())</div>
+<div class="line"><span class="lineno">  154</span>        {</div>
+<div class="line"><span class="lineno">  155</span>            <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.close();</div>
+<div class="line"><span class="lineno">  156</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Database disconnected&quot;</span>;</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00065">ServerDatabaseTest::cleanupTestCase()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00045">ServerDatabaseTest::initTestCase()</a> и <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00016">MyTcpServer::~MyTcpServer()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac25b891a7b63d6a3b9d63ffddc6ae602" name="ac25b891a7b63d6a3b9d63ffddc6ae602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac25b891a7b63d6a3b9d63ffddc6ae602">&#9670;&#160;</a></span>equipItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::equipItem </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>itemId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>itemType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выбирает купленный предмет как активный. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">itemId</td><td>Идентификатор предмета. </td></tr>
+    <tr><td class="paramname">itemType</td><td>Тип предмета: <code>skin</code> или <code>bg</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code>, если предмет принадлежит пользователю и был выбран; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00664">664</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  665</span>    {</div>
+<div class="line"><span class="lineno">  666</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  667</span> </div>
+<div class="line"><span class="lineno">  668</span>        QString table = (itemType == <span class="stringliteral">&quot;skin&quot;</span>) ? <span class="stringliteral">&quot;user_skins&quot;</span> : <span class="stringliteral">&quot;user_backgrounds&quot;</span>;</div>
+<div class="line"><span class="lineno">  669</span>        QString column = (itemType == <span class="stringliteral">&quot;skin&quot;</span>) ? <span class="stringliteral">&quot;skin_id&quot;</span> : <span class="stringliteral">&quot;bg_id&quot;</span>;</div>
+<div class="line"><span class="lineno">  670</span> </div>
+<div class="line"><span class="lineno">  671</span>        QSqlQuery check(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  672</span>        check.prepare(QString(<span class="stringliteral">&quot;SELECT id FROM %1 WHERE user_id = :user_id AND %2 = :item_id&quot;</span>)</div>
+<div class="line"><span class="lineno">  673</span>                          .arg(table).arg(column));</div>
+<div class="line"><span class="lineno">  674</span>        check.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  675</span>        check.bindValue(<span class="stringliteral">&quot;:item_id&quot;</span>, itemId);</div>
+<div class="line"><span class="lineno">  676</span> </div>
+<div class="line"><span class="lineno">  677</span>        <span class="keywordflow">if</span> (!check.exec() || !check.next()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  678</span> </div>
+<div class="line"><span class="lineno">  679</span>        QString userColumn = (itemType == <span class="stringliteral">&quot;skin&quot;</span>) ? <span class="stringliteral">&quot;skin&quot;</span> : <span class="stringliteral">&quot;background&quot;</span>;</div>
+<div class="line"><span class="lineno">  680</span>        QSqlQuery update(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  681</span>        update.prepare(QString(<span class="stringliteral">&quot;UPDATE users SET %1 = :item_id WHERE id = :id&quot;</span>).arg(userColumn));</div>
+<div class="line"><span class="lineno">  682</span>        update.bindValue(<span class="stringliteral">&quot;:item_id&quot;</span>, itemId);</div>
+<div class="line"><span class="lineno">  683</span>        update.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  684</span> </div>
+<div class="line"><span class="lineno">  685</span>        <span class="keywordflow">return</span> update.exec();</div>
+<div class="line"><span class="lineno">  686</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+
+</div>
+</div>
+<a id="a8f91cca0d1b68e68872f2926e35fa621" name="a8f91cca0d1b68e68872f2926e35fa621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f91cca0d1b68e68872f2926e35fa621">&#9670;&#160;</a></span>getAdminGameStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getAdminGameStats </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает общую статистику всей игры для панели администратора. </p>
+<p>Метод собирает количество пользователей, активных и заблокированных игроков, число администраторов, общий и лучший счёт, монеты, средний уровень, открытые достижения, купленные скины и фоны.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка формата admin_stats|key:value|key:value или error. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00876">876</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  877</span>    {</div>
+<div class="line"><span class="lineno">  878</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen())</div>
+<div class="line"><span class="lineno">  879</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  880</span> </div>
+<div class="line"><span class="lineno">  881</span>        <span class="keyword">auto</span> scalarInt = [](<span class="keyword">const</span> QString&amp; sql) -&gt; <span class="keywordtype">int</span></div>
+<div class="line"><span class="lineno">  882</span>        {</div>
+<div class="line"><span class="lineno">  883</span>            QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">DataBase::db</a>);</div>
+<div class="line"><span class="lineno">  884</span> </div>
+<div class="line"><span class="lineno">  885</span>            <span class="keywordflow">if</span> (query.exec(sql) &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  886</span>                <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  887</span> </div>
+<div class="line"><span class="lineno">  888</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Stats int query error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  889</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  890</span>        };</div>
+<div class="line"><span class="lineno">  891</span> </div>
+<div class="line"><span class="lineno">  892</span>        <span class="keyword">auto</span> scalarDouble = [](<span class="keyword">const</span> QString&amp; sql) -&gt; <span class="keywordtype">double</span></div>
+<div class="line"><span class="lineno">  893</span>        {</div>
+<div class="line"><span class="lineno">  894</span>            QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">DataBase::db</a>);</div>
+<div class="line"><span class="lineno">  895</span> </div>
+<div class="line"><span class="lineno">  896</span>            <span class="keywordflow">if</span> (query.exec(sql) &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  897</span>                <span class="keywordflow">return</span> query.value(0).toDouble();</div>
+<div class="line"><span class="lineno">  898</span> </div>
+<div class="line"><span class="lineno">  899</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Stats double query error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  900</span>            <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">  901</span>        };</div>
+<div class="line"><span class="lineno">  902</span> </div>
+<div class="line"><span class="lineno">  903</span>        <span class="keywordflow">return</span> QString(</div>
+<div class="line"><span class="lineno">  904</span>            <span class="stringliteral">&quot;admin_stats|total_users:%1|active_users:%2|banned_users:%3|admins:%4|&quot;</span></div>
+<div class="line"><span class="lineno">  905</span>            <span class="stringliteral">&quot;total_score:%5|best_score:%6|total_coins:%7|avg_level:%8|&quot;</span></div>
+<div class="line"><span class="lineno">  906</span>            <span class="stringliteral">&quot;unlocked_achievements:%9|bought_skins:%10|bought_backgrounds:%11&quot;</span></div>
+<div class="line"><span class="lineno">  907</span>        )</div>
+<div class="line"><span class="lineno">  908</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM users&quot;</span>))</div>
+<div class="line"><span class="lineno">  909</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM users WHERE banned = 0&quot;</span>))</div>
+<div class="line"><span class="lineno">  910</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM users WHERE banned = 1&quot;</span>))</div>
+<div class="line"><span class="lineno">  911</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM users WHERE role = &#39;admin&#39;&quot;</span>))</div>
+<div class="line"><span class="lineno">  912</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COALESCE(SUM(score), 0) FROM users&quot;</span>))</div>
+<div class="line"><span class="lineno">  913</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COALESCE(MAX(score), 0) FROM users&quot;</span>))</div>
+<div class="line"><span class="lineno">  914</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COALESCE(SUM(coins), 0) FROM users&quot;</span>))</div>
+<div class="line"><span class="lineno">  915</span>            .arg(scalarDouble(<span class="stringliteral">&quot;SELECT COALESCE(AVG(level), 0) FROM users&quot;</span>), 0, <span class="charliteral">&#39;f&#39;</span>, 2)</div>
+<div class="line"><span class="lineno">  916</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM achievements WHERE unlocked = 1&quot;</span>))</div>
+<div class="line"><span class="lineno">  917</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM user_skins&quot;</span>))</div>
+<div class="line"><span class="lineno">  918</span>            .arg(scalarInt(<span class="stringliteral">&quot;SELECT COUNT(*) FROM user_backgrounds&quot;</span>));</div>
+<div class="line"><span class="lineno">  919</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 8 --></div>
+</div>
+
+</div>
+</div>
+<a id="a152ecb96b38bafb6d1abde6fb89ac5f9" name="a152ecb96b38bafb6d1abde6fb89ac5f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152ecb96b38bafb6d1abde6fb89ac5f9">&#9670;&#160;</a></span>getAllUsersForAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getAllUsersForAdmin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает список всех пользователей для административной панели. </p>
+<p>Формат ответа начинается с <code>admin_users</code>, далее данные пользователей передаются через разделители <code></code>| и <code></code>:.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка со списком пользователей или <code>error</code> при недоступной базе данных. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00813">813</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  814</span>    {</div>
+<div class="line"><span class="lineno">  815</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  816</span> </div>
+<div class="line"><span class="lineno">  817</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  818</span>        query.prepare(</div>
+<div class="line"><span class="lineno">  819</span>            <span class="stringliteral">&quot;SELECT id, login, COALESCE(display_name, &#39;&#39;), role, banned, score, coins, level, xp, skin, background &quot;</span></div>
+<div class="line"><span class="lineno">  820</span>            <span class="stringliteral">&quot;FROM users &quot;</span></div>
+<div class="line"><span class="lineno">  821</span>            <span class="stringliteral">&quot;ORDER BY id ASC&quot;</span></div>
+<div class="line"><span class="lineno">  822</span>        );</div>
+<div class="line"><span class="lineno">  823</span> </div>
+<div class="line"><span class="lineno">  824</span>        QString result = <span class="stringliteral">&quot;admin_users&quot;</span>;</div>
+<div class="line"><span class="lineno">  825</span> </div>
+<div class="line"><span class="lineno">  826</span>        <span class="keywordflow">if</span> (query.exec())</div>
+<div class="line"><span class="lineno">  827</span>        {</div>
+<div class="line"><span class="lineno">  828</span>            <span class="keywordflow">while</span> (query.next())</div>
+<div class="line"><span class="lineno">  829</span>            {</div>
+<div class="line"><span class="lineno">  830</span>                QString <span class="keywordtype">id</span> = query.value(0).toString();</div>
+<div class="line"><span class="lineno">  831</span>                QString login = query.value(1).toString();</div>
+<div class="line"><span class="lineno">  832</span>                QString displayName = query.value(2).toString();</div>
+<div class="line"><span class="lineno">  833</span>                QString role = query.value(3).toString();</div>
+<div class="line"><span class="lineno">  834</span>                QString banned = query.value(4).toString();</div>
+<div class="line"><span class="lineno">  835</span>                QString score = query.value(5).toString();</div>
+<div class="line"><span class="lineno">  836</span>                QString coins = query.value(6).toString();</div>
+<div class="line"><span class="lineno">  837</span>                QString level = query.value(7).toString();</div>
+<div class="line"><span class="lineno">  838</span>                QString xp = query.value(8).toString();</div>
+<div class="line"><span class="lineno">  839</span>                QString skin = query.value(9).toString();</div>
+<div class="line"><span class="lineno">  840</span>                QString background = query.value(10).toString();</div>
+<div class="line"><span class="lineno">  841</span> </div>
+<div class="line"><span class="lineno">  842</span>                <span class="keywordflow">if</span> (displayName.trimmed().isEmpty())</div>
+<div class="line"><span class="lineno">  843</span>                    displayName = login;</div>
+<div class="line"><span class="lineno">  844</span> </div>
+<div class="line"><span class="lineno">  845</span>                QStringList values;</div>
+<div class="line"><span class="lineno">  846</span>                values &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; login &lt;&lt; displayName &lt;&lt; role &lt;&lt; banned</div>
+<div class="line"><span class="lineno">  847</span>                       &lt;&lt; score &lt;&lt; coins &lt;&lt; level &lt;&lt; xp &lt;&lt; skin &lt;&lt; background;</div>
+<div class="line"><span class="lineno">  848</span> </div>
+<div class="line"><span class="lineno">  849</span>                <span class="keywordflow">for</span> (QString&amp; value : values)</div>
+<div class="line"><span class="lineno">  850</span>                {</div>
+<div class="line"><span class="lineno">  851</span>                    value.remove(QChar(1));</div>
+<div class="line"><span class="lineno">  852</span>                    value.replace(<span class="stringliteral">&quot;|&quot;</span>, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><span class="lineno">  853</span>                    value.replace(<span class="stringliteral">&quot;:&quot;</span>, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><span class="lineno">  854</span>                }</div>
+<div class="line"><span class="lineno">  855</span> </div>
+<div class="line"><span class="lineno">  856</span>                result += <span class="stringliteral">&quot;|&quot;</span> + values.join(<span class="stringliteral">&quot;:&quot;</span>);</div>
+<div class="line"><span class="lineno">  857</span>            }</div>
+<div class="line"><span class="lineno">  858</span>        }</div>
+<div class="line"><span class="lineno">  859</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  860</span>        {</div>
+<div class="line"><span class="lineno">  861</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Admin users query error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  862</span>        }</div>
+<div class="line"><span class="lineno">  863</span> </div>
+<div class="line"><span class="lineno">  864</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  865</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 9 --></div>
+</div>
+
+</div>
+</div>
+<a id="aec073a8c825d0a4cbd3c597776d17eac" name="aec073a8c825d0a4cbd3c597776d17eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec073a8c825d0a4cbd3c597776d17eac">&#9670;&#160;</a></span>getDatabase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlDatabase DataBase::getDatabase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает текущее соединение с базой данных. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Объект QSqlDatabase, используемый классом <a class="el" href="../../d1/d4c/class_data_base.html" title="Статический класс для доступа к базе данных сервера.">DataBase</a>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00164">164</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>    {</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>;</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00030">ServerDatabaseTest::clearTables()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00077">ServerDatabaseTest::test_database_connection_and_tables()</a>.</p>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 10 --></div>
+</div>
+
+</div>
+</div>
+<a id="a735e5fdf28d07d3e618434168ce6efaa" name="a735e5fdf28d07d3e618434168ce6efaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735e5fdf28d07d3e618434168ce6efaa">&#9670;&#160;</a></span>getLeaderboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getLeaderboard </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Формирует таблицу лидеров по очкам. </p>
+<p>Возвращает до десяти пользователей, отсортированных по убыванию очков. Формат ответа: <code>leaderboard|place</code>:name:score:level...</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка с таблицей лидеров или <code>error</code> при недоступной базе данных. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00696">696</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  697</span>    {</div>
+<div class="line"><span class="lineno">  698</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  699</span> </div>
+<div class="line"><span class="lineno">  700</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  701</span>        query.prepare(</div>
+<div class="line"><span class="lineno">  702</span>            <span class="stringliteral">&quot;SELECT COALESCE(NULLIF(display_name, &#39;&#39;), login), score, level &quot;</span></div>
+<div class="line"><span class="lineno">  703</span>            <span class="stringliteral">&quot;FROM users &quot;</span></div>
+<div class="line"><span class="lineno">  704</span>            <span class="stringliteral">&quot;ORDER BY score DESC &quot;</span></div>
+<div class="line"><span class="lineno">  705</span>            <span class="stringliteral">&quot;LIMIT 10&quot;</span></div>
+<div class="line"><span class="lineno">  706</span>            );</div>
+<div class="line"><span class="lineno">  707</span> </div>
+<div class="line"><span class="lineno">  708</span>        QString result = <span class="stringliteral">&quot;leaderboard&quot;</span>;</div>
+<div class="line"><span class="lineno">  709</span> </div>
+<div class="line"><span class="lineno">  710</span>        <span class="keywordflow">if</span> (query.exec())</div>
+<div class="line"><span class="lineno">  711</span>        {</div>
+<div class="line"><span class="lineno">  712</span>            <span class="keywordtype">int</span> place = 1;</div>
+<div class="line"><span class="lineno">  713</span> </div>
+<div class="line"><span class="lineno">  714</span>            <span class="keywordflow">while</span> (query.next())</div>
+<div class="line"><span class="lineno">  715</span>            {</div>
+<div class="line"><span class="lineno">  716</span>                QString login = query.value(0).toString();</div>
+<div class="line"><span class="lineno">  717</span>                <span class="keywordtype">int</span> score = query.value(1).toInt();</div>
+<div class="line"><span class="lineno">  718</span>                <span class="keywordtype">int</span> level = query.value(2).toInt();</div>
+<div class="line"><span class="lineno">  719</span> </div>
+<div class="line"><span class="lineno">  720</span>                result += QString(<span class="stringliteral">&quot;|%1:%2:%3:%4&quot;</span>)</div>
+<div class="line"><span class="lineno">  721</span>                              .arg(place)</div>
+<div class="line"><span class="lineno">  722</span>                              .arg(login)</div>
+<div class="line"><span class="lineno">  723</span>                              .arg(score)</div>
+<div class="line"><span class="lineno">  724</span>                              .arg(level);</div>
+<div class="line"><span class="lineno">  725</span> </div>
+<div class="line"><span class="lineno">  726</span>                place++;</div>
+<div class="line"><span class="lineno">  727</span>            }</div>
+<div class="line"><span class="lineno">  728</span>        }</div>
+<div class="line"><span class="lineno">  729</span> </div>
+<div class="line"><span class="lineno">  730</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  731</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 11 --></div>
+</div>
+
+</div>
+</div>
+<a id="acf3ba04f2c1eb10eb7a8c1a18a0a375f" name="acf3ba04f2c1eb10eb7a8c1a18a0a375f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf3ba04f2c1eb10eb7a8c1a18a0a375f">&#9670;&#160;</a></span>getShopData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getShopData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает данные магазина и инвентаря пользователя. </p>
+<p>Формат ответа: <code>shop_data|coins|skin|background|ownedSkins|ownedBackgrounds</code> </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка с данными магазина или <code>error</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00559">559</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  560</span>    {</div>
+<div class="line"><span class="lineno">  561</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  562</span> </div>
+<div class="line"><span class="lineno">  563</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  564</span>        query.prepare(<span class="stringliteral">&quot;SELECT coins, skin, background FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  565</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  566</span> </div>
+<div class="line"><span class="lineno">  567</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  568</span>        {</div>
+<div class="line"><span class="lineno">  569</span>            <span class="keywordtype">int</span> coins = query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  570</span>            <span class="keywordtype">int</span> skin = query.value(1).toInt();</div>
+<div class="line"><span class="lineno">  571</span>            <span class="keywordtype">int</span> bg = query.value(2).toInt();</div>
+<div class="line"><span class="lineno">  572</span> </div>
+<div class="line"><span class="lineno">  573</span>            QSqlQuery skinQuery(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  574</span>            skinQuery.prepare(<span class="stringliteral">&quot;SELECT skin_id FROM user_skins WHERE user_id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  575</span>            skinQuery.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  576</span>            QStringList ownedSkins;</div>
+<div class="line"><span class="lineno">  577</span>            <span class="keywordflow">if</span> (skinQuery.exec())</div>
+<div class="line"><span class="lineno">  578</span>            {</div>
+<div class="line"><span class="lineno">  579</span>                <span class="keywordflow">while</span> (skinQuery.next())</div>
+<div class="line"><span class="lineno">  580</span>                    ownedSkins &lt;&lt; skinQuery.value(0).toString();</div>
+<div class="line"><span class="lineno">  581</span>            }</div>
+<div class="line"><span class="lineno">  582</span> </div>
+<div class="line"><span class="lineno">  583</span>            QSqlQuery bgQuery(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  584</span>            bgQuery.prepare(<span class="stringliteral">&quot;SELECT bg_id FROM user_backgrounds WHERE user_id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  585</span>            bgQuery.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  586</span>            QStringList ownedBgs;</div>
+<div class="line"><span class="lineno">  587</span>            <span class="keywordflow">if</span> (bgQuery.exec())</div>
+<div class="line"><span class="lineno">  588</span>            {</div>
+<div class="line"><span class="lineno">  589</span>                <span class="keywordflow">while</span> (bgQuery.next())</div>
+<div class="line"><span class="lineno">  590</span>                    ownedBgs &lt;&lt; bgQuery.value(0).toString();</div>
+<div class="line"><span class="lineno">  591</span>            }</div>
+<div class="line"><span class="lineno">  592</span> </div>
+<div class="line"><span class="lineno">  593</span>            <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;shop_data|%1|%2|%3|%4|%5&quot;</span>)</div>
+<div class="line"><span class="lineno">  594</span>                .arg(coins).arg(skin).arg(bg)</div>
+<div class="line"><span class="lineno">  595</span>                .arg(ownedSkins.join(<span class="stringliteral">&quot;,&quot;</span>))</div>
+<div class="line"><span class="lineno">  596</span>                .arg(ownedBgs.join(<span class="stringliteral">&quot;,&quot;</span>));</div>
+<div class="line"><span class="lineno">  597</span>        }</div>
+<div class="line"><span class="lineno">  598</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  599</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 12 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac00a9dd62f44c4856b217126ce997b78" name="ac00a9dd62f44c4856b217126ce997b78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00a9dd62f44c4856b217126ce997b78">&#9670;&#160;</a></span>getUserAchievements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getUserAchievements </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает список достижений пользователя в строковом формате. </p>
+<p>Формат ответа: <code>achievements|achievement_id</code>:unlocked:progress...</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка с данными достижений или <code>error</code> при недоступной базе данных. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00496">496</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  497</span>    {</div>
+<div class="line"><span class="lineno">  498</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;error&quot;</span>;</div>
+<div class="line"><span class="lineno">  499</span> </div>
+<div class="line"><span class="lineno">  500</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  501</span>        query.prepare(<span class="stringliteral">&quot;SELECT achievement_id, unlocked, progress FROM achievements WHERE user_id = :user_id&quot;</span>);</div>
+<div class="line"><span class="lineno">  502</span>        query.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  503</span> </div>
+<div class="line"><span class="lineno">  504</span>        QString result = <span class="stringliteral">&quot;achievements&quot;</span>;</div>
+<div class="line"><span class="lineno">  505</span>        <span class="keywordflow">if</span> (query.exec())</div>
+<div class="line"><span class="lineno">  506</span>        {</div>
+<div class="line"><span class="lineno">  507</span>            <span class="keywordflow">while</span> (query.next())</div>
+<div class="line"><span class="lineno">  508</span>            {</div>
+<div class="line"><span class="lineno">  509</span>                result += QString(<span class="stringliteral">&quot;|%1:%2:%3&quot;</span>)</div>
+<div class="line"><span class="lineno">  510</span>                .arg(query.value(0).toInt())</div>
+<div class="line"><span class="lineno">  511</span>                    .arg(query.value(1).toInt())</div>
+<div class="line"><span class="lineno">  512</span>                    .arg(query.value(2).toInt());</div>
+<div class="line"><span class="lineno">  513</span>            }</div>
+<div class="line"><span class="lineno">  514</span>        }</div>
+<div class="line"><span class="lineno">  515</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  516</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 13 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac1f418bd0885a13660a943b213d94373" name="ac1f418bd0885a13660a943b213d94373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f418bd0885a13660a943b213d94373">&#9670;&#160;</a></span>getUserBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserBackground </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает идентификатор выбранного фона пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор фона или <code>100</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00372">372</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  373</span>    {</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 100;</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  377</span>        query.prepare(<span class="stringliteral">&quot;SELECT background FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  378</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  381</span>        {</div>
+<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  383</span>        }</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">return</span> 100;</div>
+<div class="line"><span class="lineno">  385</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a>.</p>
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 14 --></div>
+</div>
+
+</div>
+</div>
+<a id="acf6b5b4d17b03de96d29d7f6f7ac70cc" name="acf6b5b4d17b03de96d29d7f6f7ac70cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6b5b4d17b03de96d29d7f6f7ac70cc">&#9670;&#160;</a></span>getUserCoins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserCoins </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает количество монет пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение поля <code>coins</code> или <code>0</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00292">292</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  293</span>    {</div>
+<div class="line"><span class="lineno">  294</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  297</span>        query.prepare(<span class="stringliteral">&quot;SELECT coins FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  298</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  301</span>        {</div>
+<div class="line"><span class="lineno">  302</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  303</span>        }</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  305</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00168">ServerDatabaseTest::test_shop_and_achievements()</a>.</p>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 15 --></div>
+</div>
+
+</div>
+</div>
+<a id="a0abe72ad8551fac2c7413129d396dab9" name="a0abe72ad8551fac2c7413129d396dab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abe72ad8551fac2c7413129d396dab9">&#9670;&#160;</a></span>getUserDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getUserDisplayName </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает отображаемое имя пользователя. </p>
+<p>Если display_name пустой, возвращается логин. Если пользователь не найден, возвращается строка <code>Игрок</code>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отображаемое имя пользователя. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00742">742</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  743</span>    {</div>
+<div class="line"><span class="lineno">  744</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;Игрок&quot;</span>;</div>
+<div class="line"><span class="lineno">  745</span> </div>
+<div class="line"><span class="lineno">  746</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  747</span>        query.prepare(<span class="stringliteral">&quot;SELECT display_name, login FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  748</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  749</span> </div>
+<div class="line"><span class="lineno">  750</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  751</span>        {</div>
+<div class="line"><span class="lineno">  752</span>            QString displayName = query.value(0).toString().trimmed();</div>
+<div class="line"><span class="lineno">  753</span>            QString login = query.value(1).toString().trimmed();</div>
+<div class="line"><span class="lineno">  754</span> </div>
+<div class="line"><span class="lineno">  755</span>            <span class="keywordflow">if</span> (!displayName.isEmpty())</div>
+<div class="line"><span class="lineno">  756</span>                <span class="keywordflow">return</span> displayName;</div>
+<div class="line"><span class="lineno">  757</span> </div>
+<div class="line"><span class="lineno">  758</span>            <span class="keywordflow">return</span> login;</div>
+<div class="line"><span class="lineno">  759</span>        }</div>
+<div class="line"><span class="lineno">  760</span> </div>
+<div class="line"><span class="lineno">  761</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Игрок&quot;</span>;</div>
+<div class="line"><span class="lineno">  762</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a>.</p>
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 16 --></div>
+</div>
+
+</div>
+</div>
+<a id="a67529d7837586d787a0d902214972a6d" name="a67529d7837586d787a0d902214972a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67529d7837586d787a0d902214972a6d">&#9670;&#160;</a></span>getUserId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserId </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает идентификатор пользователя по логину. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор пользователя или <code>-1</code>, если пользователь не найден. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00252">252</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  253</span>    {</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  257</span>        query.prepare(<span class="stringliteral">&quot;SELECT id FROM users WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  258</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  261</span>        {</div>
+<div class="line"><span class="lineno">  262</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  263</span>        }</div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  265</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00197">registerUser()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00168">ServerDatabaseTest::test_shop_and_achievements()</a>.</p>
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 17 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac6553cbda352ac93bb4ada269f97d930" name="ac6553cbda352ac93bb4ada269f97d930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6553cbda352ac93bb4ada269f97d930">&#9670;&#160;</a></span>getUserLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserLevel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает уровень пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение поля <code>level</code> или <code>1</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00312">312</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  313</span>    {</div>
+<div class="line"><span class="lineno">  314</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  317</span>        query.prepare(<span class="stringliteral">&quot;SELECT level FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  318</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  321</span>        {</div>
+<div class="line"><span class="lineno">  322</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  323</span>        }</div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  325</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a>.</p>
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 18 --></div>
+</div>
+
+</div>
+</div>
+<a id="a40d2d22b57a53d6116193d793eccc61d" name="a40d2d22b57a53d6116193d793eccc61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40d2d22b57a53d6116193d793eccc61d">&#9670;&#160;</a></span>getUserRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DataBase::getUserRole </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает роль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Роль пользователя: обычно <code>player</code> или <code>admin</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00775">775</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  776</span>    {</div>
+<div class="line"><span class="lineno">  777</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="stringliteral">&quot;player&quot;</span>;</div>
+<div class="line"><span class="lineno">  778</span> </div>
+<div class="line"><span class="lineno">  779</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  780</span>        query.prepare(<span class="stringliteral">&quot;SELECT role FROM users WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  781</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  782</span> </div>
+<div class="line"><span class="lineno">  783</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  784</span>            <span class="keywordflow">return</span> query.value(0).toString().trimmed();</div>
+<div class="line"><span class="lineno">  785</span> </div>
+<div class="line"><span class="lineno">  786</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;player&quot;</span>;</div>
+<div class="line"><span class="lineno">  787</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer::MyTcpServer()</a> и <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 19 --></div>
+</div>
+
+</div>
+</div>
+<a id="a5cfd221fa7e8019ec32b7161ec43ecbc" name="a5cfd221fa7e8019ec32b7161ec43ecbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cfd221fa7e8019ec32b7161ec43ecbc">&#9670;&#160;</a></span>getUserScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserScore </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает количество очков пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение поля <code>score</code> или <code>0</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00272">272</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  273</span>    {</div>
+<div class="line"><span class="lineno">  274</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  275</span> </div>
+<div class="line"><span class="lineno">  276</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  277</span>        query.prepare(<span class="stringliteral">&quot;SELECT score FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  278</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  281</span>        {</div>
+<div class="line"><span class="lineno">  282</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  283</span>        }</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  285</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a>.</p>
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 20 --></div>
+</div>
+
+</div>
+</div>
+<a id="aa55351bb129792a42afeace31c424982" name="aa55351bb129792a42afeace31c424982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55351bb129792a42afeace31c424982">&#9670;&#160;</a></span>getUserSkin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserSkin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает идентификатор выбранного скина пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор скина или <code>0</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00352">352</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  353</span>    {</div>
+<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  355</span> </div>
+<div class="line"><span class="lineno">  356</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  357</span>        query.prepare(<span class="stringliteral">&quot;SELECT skin FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  358</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  361</span>        {</div>
+<div class="line"><span class="lineno">  362</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  363</span>        }</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  365</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00168">ServerDatabaseTest::test_shop_and_achievements()</a>.</p>
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 21 --></div>
+</div>
+
+</div>
+</div>
+<a id="a6bc1dc9336aae01b0e203604e809fee4" name="a6bc1dc9336aae01b0e203604e809fee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc1dc9336aae01b0e203604e809fee4">&#9670;&#160;</a></span>getUserXP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataBase::getUserXP </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает количество опыта пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение поля <code>xp</code> или <code>0</code> при ошибке. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00332">332</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  333</span>    {</div>
+<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  337</span>        query.prepare(<span class="stringliteral">&quot;SELECT xp FROM users WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  338</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  341</span>        {</div>
+<div class="line"><span class="lineno">  342</span>            <span class="keywordflow">return</span> query.value(0).toInt();</div>
+<div class="line"><span class="lineno">  343</span>        }</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>, <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a>.</p>
+<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 22 --></div>
+</div>
+
+</div>
+</div>
+<a id="ad205fa19b4b9bde5c9f71f4a04ecd45f" name="ad205fa19b4b9bde5c9f71f4a04ecd45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad205fa19b4b9bde5c9f71f4a04ecd45f">&#9670;&#160;</a></span>isUserBanned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::isUserBanned </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, заблокирован ли пользователь. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code>, если пользователь заблокирован; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00967">967</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  968</span>    {</div>
+<div class="line"><span class="lineno">  969</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  970</span> </div>
+<div class="line"><span class="lineno">  971</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  972</span>        query.prepare(<span class="stringliteral">&quot;SELECT banned FROM users WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  973</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  974</span> </div>
+<div class="line"><span class="lineno">  975</span>        <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next())</div>
+<div class="line"><span class="lineno">  976</span>            <span class="keywordflow">return</span> query.value(0).toInt() == 1;</div>
+<div class="line"><span class="lineno">  977</span> </div>
+<div class="line"><span class="lineno">  978</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  979</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00392">auth()</a>.</p>
+<div id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 23 --></div>
+</div>
+
+</div>
+</div>
+<a id="a28e89384d538974cbc1a58c03e0f749a" name="a28e89384d538974cbc1a58c03e0f749a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e89384d538974cbc1a58c03e0f749a">&#9670;&#160;</a></span>makeAdmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::makeAdmin </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Назначает пользователю роль администратора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00794">794</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  795</span>    {</div>
+<div class="line"><span class="lineno">  796</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  797</span> </div>
+<div class="line"><span class="lineno">  798</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  799</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET role = &#39;admin&#39; WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  800</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  801</span> </div>
+<div class="line"><span class="lineno">  802</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  803</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer::MyTcpServer()</a>.</p>
+<div id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 24 --></div>
+</div>
+
+</div>
+</div>
+<a id="a4000cb61524329ce49bf82d83e7fc1e4" name="a4000cb61524329ce49bf82d83e7fc1e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4000cb61524329ce49bf82d83e7fc1e4">&#9670;&#160;</a></span>registerUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::registerUser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>displayName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Регистрирует нового пользователя. </p>
+<p>После создания записи пользователю автоматически добавляются стартовый скин и стартовый фон.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+    <tr><td class="paramname">displayName</td><td>Отображаемое имя игрока. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешной регистрации; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00197">197</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  202</span>        query.prepare(<span class="stringliteral">&quot;INSERT INTO users (login, display_name, password) VALUES (:login, :display_name, :password)&quot;</span>);</div>
+<div class="line"><span class="lineno">  203</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  204</span>        query.bindValue(<span class="stringliteral">&quot;:display_name&quot;</span>, displayName.trimmed());</div>
+<div class="line"><span class="lineno">  205</span>        query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, password.trimmed());</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">if</span> (!query.exec())</div>
+<div class="line"><span class="lineno">  208</span>        {</div>
+<div class="line"><span class="lineno">  209</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Register error:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><span class="lineno">  210</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  211</span>        }</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordtype">int</span> userId = <a class="code hl_function" href="#a67529d7837586d787a0d902214972a6d">getUserId</a>(login);</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>        QSqlQuery insertSkin(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  216</span>        insertSkin.prepare(<span class="stringliteral">&quot;INSERT INTO user_skins (user_id, skin_id) VALUES (:user_id, 0)&quot;</span>);</div>
+<div class="line"><span class="lineno">  217</span>        insertSkin.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  218</span>        insertSkin.exec();</div>
+<div class="line"><span class="lineno">  219</span> </div>
+<div class="line"><span class="lineno">  220</span>        QSqlQuery insertBg(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  221</span>        insertBg.prepare(<span class="stringliteral">&quot;INSERT INTO user_backgrounds (user_id, bg_id) VALUES (:user_id, 100)&quot;</span>);</div>
+<div class="line"><span class="lineno">  222</span>        insertBg.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  223</span>        insertBg.exec();</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="ttc" id="aclass_data_base_html_a67529d7837586d787a0d902214972a6d"><div class="ttname"><a href="#a67529d7837586d787a0d902214972a6d">DataBase::getUserId</a></div><div class="ttdeci">static int getUserId(const QString &amp;login)</div><div class="ttdoc">Возвращает идентификатор пользователя по логину.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00252">dataBase.h:252</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a> и <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00252">getUserId()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00443">reg()</a>, <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00138">ServerDatabaseTest::test_player_data_save_and_reading()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00168">ServerDatabaseTest::test_shop_and_achievements()</a>.</p>
+<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 25 --></div>
+</div>
+<div id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 26 --></div>
+</div>
+
+</div>
+</div>
+<a id="af9d00bbd4905f61b56ff90964152aa60" name="af9d00bbd4905f61b56ff90964152aa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d00bbd4905f61b56ff90964152aa60">&#9670;&#160;</a></span>savePlayerData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::savePlayerData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>score</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>coins</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>xp</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохраняет основные игровые данные пользователя одним запросом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">score</td><td>Количество очков. </td></tr>
+    <tr><td class="paramname">coins</td><td>Количество монет. </td></tr>
+    <tr><td class="paramname">level</td><td>Уровень игрока. </td></tr>
+    <tr><td class="paramname">xp</td><td>Количество опыта. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном сохранении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00470">470</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  471</span>    {</div>
+<div class="line"><span class="lineno">  472</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  473</span> </div>
+<div class="line"><span class="lineno">  474</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  475</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET score = :score, coins = :coins, level = :level, xp = :xp WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  476</span>        query.bindValue(<span class="stringliteral">&quot;:score&quot;</span>, score);</div>
+<div class="line"><span class="lineno">  477</span>        query.bindValue(<span class="stringliteral">&quot;:coins&quot;</span>, coins);</div>
+<div class="line"><span class="lineno">  478</span>        query.bindValue(<span class="stringliteral">&quot;:level&quot;</span>, level);</div>
+<div class="line"><span class="lineno">  479</span>        query.bindValue(<span class="stringliteral">&quot;:xp&quot;</span>, xp);</div>
+<div class="line"><span class="lineno">  480</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  481</span> </div>
+<div class="line"><span class="lineno">  482</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  483</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 27 --></div>
+</div>
+
+</div>
+</div>
+<a id="a48e26be9648c9728f6373949b96135dc" name="a48e26be9648c9728f6373949b96135dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e26be9648c9728f6373949b96135dc">&#9670;&#160;</a></span>setUserPassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::setUserPassword </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменяет пароль пользователя. </p>
+<p>Используется администратором для смены пароля выбранного пользователя.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Новый пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если пароль успешно изменён, иначе false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00950">950</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  951</span>    {</div>
+<div class="line"><span class="lineno">  952</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  953</span> </div>
+<div class="line"><span class="lineno">  954</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  955</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET password = :password WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  956</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  957</span>        query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, password.trimmed());</div>
+<div class="line"><span class="lineno">  958</span> </div>
+<div class="line"><span class="lineno">  959</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  960</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer::MyTcpServer()</a> и <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 28 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab7b6d83ebdf11db8996f772310601f21" name="ab7b6d83ebdf11db8996f772310601f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b6d83ebdf11db8996f772310601f21">&#9670;&#160;</a></span>setUserRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::setUserRole </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>role</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменяет роль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">role</td><td>Новая роль. Допустимые значения: <code>admin</code> и <code>player</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00927">927</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  928</span>    {</div>
+<div class="line"><span class="lineno">  929</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  930</span> </div>
+<div class="line"><span class="lineno">  931</span>        <span class="keywordflow">if</span> (role != <span class="stringliteral">&quot;admin&quot;</span> &amp;&amp; role != <span class="stringliteral">&quot;player&quot;</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  932</span> </div>
+<div class="line"><span class="lineno">  933</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  934</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET role = :role WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  935</span>        query.bindValue(<span class="stringliteral">&quot;:role&quot;</span>, role);</div>
+<div class="line"><span class="lineno">  936</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  937</span> </div>
+<div class="line"><span class="lineno">  938</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  939</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 29 --></div>
+</div>
+
+</div>
+</div>
+<a id="a5d24d5b18964c9780eefe76b98efc321" name="a5d24d5b18964c9780eefe76b98efc321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d24d5b18964c9780eefe76b98efc321">&#9670;&#160;</a></span>unbanUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::unbanUser </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Снимает блокировку с пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешной разблокировке; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01002">1002</a></p>
+<div class="fragment"><div class="line"><span class="lineno"> 1003</span>    {</div>
+<div class="line"><span class="lineno"> 1004</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1005</span> </div>
+<div class="line"><span class="lineno"> 1006</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno"> 1007</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET banned = 0 WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1008</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno"> 1009</span> </div>
+<div class="line"><span class="lineno"> 1010</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno"> 1011</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 30 --></div>
+</div>
+
+</div>
+</div>
+<a id="a5d1f24912f3e7e8a9a5dae5ad21367f6" name="a5d1f24912f3e7e8a9a5dae5ad21367f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1f24912f3e7e8a9a5dae5ad21367f6">&#9670;&#160;</a></span>updateAchievementProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::updateAchievementProgress </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>achId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>unlocked</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт или обновляет прогресс достижения пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">achId</td><td>Идентификатор достижения. </td></tr>
+    <tr><td class="paramname">progress</td><td>Текущий прогресс достижения. </td></tr>
+    <tr><td class="paramname">unlocked</td><td>Флаг получения достижения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном сохранении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00526">526</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  527</span>    {</div>
+<div class="line"><span class="lineno">  528</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  529</span> </div>
+<div class="line"><span class="lineno">  530</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  531</span>        query.prepare(</div>
+<div class="line"><span class="lineno">  532</span>            <span class="stringliteral">&quot;INSERT INTO achievements (user_id, achievement_id, progress, unlocked) &quot;</span></div>
+<div class="line"><span class="lineno">  533</span>            <span class="stringliteral">&quot;VALUES (:user_id, :ach_id, :progress, :unlocked) &quot;</span></div>
+<div class="line"><span class="lineno">  534</span>            <span class="stringliteral">&quot;ON CONFLICT(user_id, achievement_id) DO UPDATE SET &quot;</span></div>
+<div class="line"><span class="lineno">  535</span>            <span class="stringliteral">&quot;progress = excluded.progress, &quot;</span></div>
+<div class="line"><span class="lineno">  536</span>            <span class="stringliteral">&quot;unlocked = excluded.unlocked&quot;</span></div>
+<div class="line"><span class="lineno">  537</span>            );</div>
+<div class="line"><span class="lineno">  538</span>        query.bindValue(<span class="stringliteral">&quot;:user_id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  539</span>        query.bindValue(<span class="stringliteral">&quot;:ach_id&quot;</span>, achId);</div>
+<div class="line"><span class="lineno">  540</span>        query.bindValue(<span class="stringliteral">&quot;:progress&quot;</span>, progress);</div>
+<div class="line"><span class="lineno">  541</span>        query.bindValue(<span class="stringliteral">&quot;:unlocked&quot;</span>, unlocked ? 1 : 0);</div>
+<div class="line"><span class="lineno">  542</span> </div>
+<div class="line"><span class="lineno">  543</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  544</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 31 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab31109646fc1c0a824101422443cfc81" name="ab31109646fc1c0a824101422443cfc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31109646fc1c0a824101422443cfc81">&#9670;&#160;</a></span>updateUserCoins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::updateUserCoins </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newCoins</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает новое количество монет пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newCoins</td><td>Новое количество монет. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00429">429</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  430</span>    {</div>
+<div class="line"><span class="lineno">  431</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  432</span> </div>
+<div class="line"><span class="lineno">  433</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  434</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET coins = :coins WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  435</span>        query.bindValue(<span class="stringliteral">&quot;:coins&quot;</span>, newCoins);</div>
+<div class="line"><span class="lineno">  436</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  439</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00168">ServerDatabaseTest::test_shop_and_achievements()</a>.</p>
+<div id="dynsection-32" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 32 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab6018a94b23e1af6a58b1c10f3239f7e" name="ab6018a94b23e1af6a58b1c10f3239f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6018a94b23e1af6a58b1c10f3239f7e">&#9670;&#160;</a></span>updateUserLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::updateUserLevel </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>xp</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляет уровень и опыт пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">level</td><td>Новый уровень. </td></tr>
+    <tr><td class="paramname">xp</td><td>Новое количество опыта. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00448">448</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  449</span>    {</div>
+<div class="line"><span class="lineno">  450</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  451</span> </div>
+<div class="line"><span class="lineno">  452</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  453</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET level = :level, xp = :xp WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  454</span>        query.bindValue(<span class="stringliteral">&quot;:level&quot;</span>, level);</div>
+<div class="line"><span class="lineno">  455</span>        query.bindValue(<span class="stringliteral">&quot;:xp&quot;</span>, xp);</div>
+<div class="line"><span class="lineno">  456</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  457</span> </div>
+<div class="line"><span class="lineno">  458</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  459</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-33" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 33 --></div>
+</div>
+
+</div>
+</div>
+<a id="a84724302385617fb3508011d7c2185eb" name="a84724302385617fb3508011d7c2185eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84724302385617fb3508011d7c2185eb">&#9670;&#160;</a></span>updateUserScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::updateUserScore </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newScore</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляет количество очков пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newScore</td><td>Новое количество очков. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code> при успешном обновлении; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00393">393</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  394</span>    {</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  398</span>        query.prepare(<span class="stringliteral">&quot;UPDATE users SET score = :score WHERE id = :id&quot;</span>);</div>
+<div class="line"><span class="lineno">  399</span>        query.bindValue(<span class="stringliteral">&quot;:score&quot;</span>, newScore);</div>
+<div class="line"><span class="lineno">  400</span>        query.bindValue(<span class="stringliteral">&quot;:id&quot;</span>, userId);</div>
+<div class="line"><span class="lineno">  401</span> </div>
+<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+<div id="dynsection-34" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 34 --></div>
+</div>
+
+</div>
+</div>
+<a id="a5b631537fe09a95075c841398978277f" name="a5b631537fe09a95075c841398978277f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b631537fe09a95075c841398978277f">&#9670;&#160;</a></span>userExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataBase::userExists </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>login</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет существование пользователя по логину. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><code>true</code>, если пользователь найден; иначе <code>false</code>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00174">174</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>    {</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>.isOpen()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>        QSqlQuery query(<a class="code hl_variable" href="#afaefc7539a2749f748e4da979f6d7ce8">db</a>);</div>
+<div class="line"><span class="lineno">  179</span>        query.prepare(<span class="stringliteral">&quot;SELECT id FROM users WHERE login = :login&quot;</span>);</div>
+<div class="line"><span class="lineno">  180</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login.trimmed());</div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">if</span> (!query.exec()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> query.next();</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">db</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00443">reg()</a> и <a class="el" href="../../d8/dfb/tst__database__test_8cpp_source.html#l00092">ServerDatabaseTest::test_registration_authorization_and_duplicates()</a>.</p>
+<div id="dynsection-35" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 35 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="afaefc7539a2749f748e4da979f6d7ce8" name="afaefc7539a2749f748e4da979f6d7ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaefc7539a2749f748e4da979f6d7ce8">&#9670;&#160;</a></span>db</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlDatabase DataBase::db</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Общее соединение с базой данных, используемое всеми статическими методами. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a> строка <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01020">1020</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00411">addUserCoins()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00234">authenticateUser()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00986">banUser()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00612">buyItem()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00040">connect()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00151">disconnect()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00664">equipItem()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00876">getAdminGameStats()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00813">getAllUsersForAdmin()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00164">getDatabase()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00696">getLeaderboard()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00559">getShopData()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00496">getUserAchievements()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00372">getUserBackground()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00292">getUserCoins()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00742">getUserDisplayName()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00252">getUserId()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00312">getUserLevel()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00775">getUserRole()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00272">getUserScore()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00352">getUserSkin()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00332">getUserXP()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00967">isUserBanned()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00794">makeAdmin()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00197">registerUser()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00470">savePlayerData()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00950">setUserPassword()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00927">setUserRole()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l01002">unbanUser()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00526">updateAchievementProgress()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00429">updateUserCoins()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00448">updateUserLevel()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00393">updateUserScore()</a> и <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00174">userExists()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="../../d4/d2e/data_base_8h_source.html">dataBase.h</a></li>
+<li><a class="el" href="../../dd/dd1/data_base_8cpp_source.html">dataBase.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d1/d4c/class_data_base.html">DataBase</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

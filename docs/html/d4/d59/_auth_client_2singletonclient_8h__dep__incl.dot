@@ -1,0 +1,15 @@
+digraph "singletonclient.h"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="singletonclient.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Объявление singleton-клиента для сетевого обмена с сервером."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="adminwindow.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d77/adminwindow_8cpp.html",tooltip="Реализация окна панели администратора."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="authwindow.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/daa/authwindow_8cpp.html",tooltip="Реализация окна авторизации и регистрации пользователя."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="singletonclient.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d17/_auth_client_2singletonclient_8cpp.html",tooltip="Реализация singleton-клиента для обмена данными с сервером."];
+}

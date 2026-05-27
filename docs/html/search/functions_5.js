@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['getadmingamestats_0',['getAdminGameStats',['../d1/d4c/class_data_base.html#a8f91cca0d1b68e68872f2926e35fa621',1,'DataBase']]],
+  ['getallusersforadmin_1',['getAllUsersForAdmin',['../d1/d4c/class_data_base.html#a152ecb96b38bafb6d1abde6fb89ac5f9',1,'DataBase']]],
+  ['getdatabase_2',['getDatabase',['../d1/d4c/class_data_base.html#aec073a8c825d0a4cbd3c597776d17eac',1,'DataBase']]],
+  ['getinstance_3',['getInstance',['../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1',1,'SingletonClient::getInstance()'],['../d5/d82/class_singleton_client.html#a27e7002d7386698d26f4127939567493',1,'SingletonClient::getInstance()']]],
+  ['getleaderboard_4',['getLeaderboard',['../d1/d4c/class_data_base.html#a735e5fdf28d07d3e618434168ce6efaa',1,'DataBase']]],
+  ['getshopdata_5',['getShopData',['../d1/d4c/class_data_base.html#acf3ba04f2c1eb10eb7a8c1a18a0a375f',1,'DataBase']]],
+  ['getuserachievements_6',['getUserAchievements',['../d1/d4c/class_data_base.html#ac00a9dd62f44c4856b217126ce997b78',1,'DataBase']]],
+  ['getuserbackground_7',['getUserBackground',['../d1/d4c/class_data_base.html#ac1f418bd0885a13660a943b213d94373',1,'DataBase']]],
+  ['getusercoins_8',['getUserCoins',['../d1/d4c/class_data_base.html#acf6b5b4d17b03de96d29d7f6f7ac70cc',1,'DataBase']]],
+  ['getuserdisplayname_9',['getUserDisplayName',['../d1/d4c/class_data_base.html#a0abe72ad8551fac2c7413129d396dab9',1,'DataBase']]],
+  ['getuserid_10',['getUserId',['../d1/d4c/class_data_base.html#a67529d7837586d787a0d902214972a6d',1,'DataBase']]],
+  ['getuserlevel_11',['getUserLevel',['../d1/d4c/class_data_base.html#ac6553cbda352ac93bb4ada269f97d930',1,'DataBase']]],
+  ['getuserrole_12',['getUserRole',['../d1/d4c/class_data_base.html#a40d2d22b57a53d6116193d793eccc61d',1,'DataBase']]],
+  ['getuserscore_13',['getUserScore',['../d1/d4c/class_data_base.html#a5cfd221fa7e8019ec32b7161ec43ecbc',1,'DataBase']]],
+  ['getuserskin_14',['getUserSkin',['../d1/d4c/class_data_base.html#aa55351bb129792a42afeace31c424982',1,'DataBase']]],
+  ['getuserxp_15',['getUserXP',['../d1/d4c/class_data_base.html#a6bc1dc9336aae01b0e203604e809fee4',1,'DataBase']]]
+];

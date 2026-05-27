@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Edinobogic: Исходный файл adminwindow.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Edinobogic<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Qt client-server educational project</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('../../',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('dd/d65/adminwindow_8h_source.html','../../',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">adminwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/d65/adminwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef ADMINWINDOW_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define ADMINWINDOW_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QTableWidget&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QLabel&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d9/d11/class_admin_window.html#af033906d72b15389e549dbb14e78a774">AdminWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Q_OBJECT</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#af033906d72b15389e549dbb14e78a774">AdminWindow</a>(<span class="keyword">const</span> QString&amp; <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#af29225ba7717522f12b2f271f06d2357">adminLogin</a>, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#a91437d210c0781c996d1ae6ef1376dfe">onReadyRead</a>(QString msg);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#aec89e2519a69b881d5dfb2d6235510db">loadUsers</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ad059c9bc4f6c81bf2b316f660bddc01a">loadStats</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#a46c165e06be06be5667cd6d12d565025">loadOnlineUsers</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#a2ca7a669f0de1a9748c8dd4abdc2e8e2">banSelectedUser</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ae2a706c529c2b28fb786ebb6dc4a548d">unbanSelectedUser</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ac783e92892d35abcdb411d649833a496">changeSelectedUserPassword</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#abf5592e72174597b897c5f7bc4f681e8">setupUI</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ab6cedf7d1caa22b2dc43f2550546c369">applyPinkTheme</a>();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#a5572bfd39540a4f51bb21d54377d7082">sendToServer</a>(<span class="keyword">const</span> QString&amp; data);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ae08c73ae7d3b55949ce98465a939e3dc">showStats</a>(<span class="keyword">const</span> QString&amp; msg);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d11/class_admin_window.html#ab89f1aa53bf89d77e5aeb7f8714b53d7">showOnlineUsers</a>(<span class="keyword">const</span> QString&amp; msg);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    QString <a class="code hl_function" href="../../d9/d11/class_admin_window.html#abf7394d14ca8b1304a173949d29ba767">readServerIp</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#af29225ba7717522f12b2f271f06d2357">  132</a></span>    QString <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#af29225ba7717522f12b2f271f06d2357">adminLogin</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#a69e5a5d3b0a803863541b8d80c703b2b">  133</a></span>    QString <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#a69e5a5d3b0a803863541b8d80c703b2b">buffer</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#aa7e56cebeaeca9a3d9cf05df2f1c0f3f">  135</a></span>    QTableWidget* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#aa7e56cebeaeca9a3d9cf05df2f1c0f3f">table</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#a2bbdab73244ba4e4eb4684f1eaac1149">  136</a></span>    QPushButton* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#a2bbdab73244ba4e4eb4684f1eaac1149">refreshBtn</a>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#a5d7291f8b24226ac90eeaff7d8a6e8a5">  137</a></span>    QPushButton* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#a5d7291f8b24226ac90eeaff7d8a6e8a5">banBtn</a>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#af37fadc52c88593069b386f63a3a830a">  138</a></span>    QPushButton* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#af37fadc52c88593069b386f63a3a830a">unbanBtn</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#ae51dadbbcbdbc5b16203a64e55495e50">  139</a></span>    QPushButton* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#ae51dadbbcbdbc5b16203a64e55495e50">changePassBtn</a>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#ae126f52112ca0eb789a34176a45c0109">  144</a></span>    QLabel* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#ae126f52112ca0eb789a34176a45c0109">statusLabel</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#aad6f54ab78c41a046798acfc3f430872">  149</a></span>    QLabel* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#aad6f54ab78c41a046798acfc3f430872">statsLabel</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d9/d11/class_admin_window.html#acb6478a5bd11ccab864e54ded7a1115f">  154</a></span>    QLabel* <a class="code hl_variable" href="../../d9/d11/class_admin_window.html#acb6478a5bd11ccab864e54ded7a1115f">onlineUsersLabel</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>};</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#endif </span><span class="comment">// ADMINWINDOW_H</span></div>
+<div class="ttc" id="aclass_admin_window_html_a2bbdab73244ba4e4eb4684f1eaac1149"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a2bbdab73244ba4e4eb4684f1eaac1149">AdminWindow::refreshBtn</a></div><div class="ttdeci">QPushButton * refreshBtn</div><div class="ttdef"><b>Определения</b> <a href="#l00136">adminwindow.h:136</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a2ca7a669f0de1a9748c8dd4abdc2e8e2"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a2ca7a669f0de1a9748c8dd4abdc2e8e2">AdminWindow::banSelectedUser</a></div><div class="ttdeci">void banSelectedUser()</div><div class="ttdoc">Блокирует выбранного пользователя.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00436">adminwindow.cpp:436</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a46c165e06be06be5667cd6d12d565025"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a46c165e06be06be5667cd6d12d565025">AdminWindow::loadOnlineUsers</a></div><div class="ttdeci">void loadOnlineUsers()</div><div class="ttdoc">Запрашивает список пользователей, которые сейчас находятся онлайн.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00242">adminwindow.cpp:242</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a5572bfd39540a4f51bb21d54377d7082"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a5572bfd39540a4f51bb21d54377d7082">AdminWindow::sendToServer</a></div><div class="ttdeci">void sendToServer(const QString &amp;data)</div><div class="ttdoc">Отправляет строковую команду на сервер.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00207">adminwindow.cpp:207</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a5d7291f8b24226ac90eeaff7d8a6e8a5"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a5d7291f8b24226ac90eeaff7d8a6e8a5">AdminWindow::banBtn</a></div><div class="ttdeci">QPushButton * banBtn</div><div class="ttdef"><b>Определения</b> <a href="#l00137">adminwindow.h:137</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a69e5a5d3b0a803863541b8d80c703b2b"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a69e5a5d3b0a803863541b8d80c703b2b">AdminWindow::buffer</a></div><div class="ttdeci">QString buffer</div><div class="ttdef"><b>Определения</b> <a href="#l00133">adminwindow.h:133</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_a91437d210c0781c996d1ae6ef1376dfe"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#a91437d210c0781c996d1ae6ef1376dfe">AdminWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead(QString msg)</div><div class="ttdoc">Обрабатывает сообщение, полученное от сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00265">adminwindow.cpp:265</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_aa7e56cebeaeca9a3d9cf05df2f1c0f3f"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#aa7e56cebeaeca9a3d9cf05df2f1c0f3f">AdminWindow::table</a></div><div class="ttdeci">QTableWidget * table</div><div class="ttdef"><b>Определения</b> <a href="#l00135">adminwindow.h:135</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_aad6f54ab78c41a046798acfc3f430872"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#aad6f54ab78c41a046798acfc3f430872">AdminWindow::statsLabel</a></div><div class="ttdeci">QLabel * statsLabel</div><div class="ttdoc">Текстовый блок для общей статистики игры.</div><div class="ttdef"><b>Определения</b> <a href="#l00149">adminwindow.h:149</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ab6cedf7d1caa22b2dc43f2550546c369"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ab6cedf7d1caa22b2dc43f2550546c369">AdminWindow::applyPinkTheme</a></div><div class="ttdeci">void applyPinkTheme()</div><div class="ttdoc">Применяет розовую тему оформления к окну.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00156">adminwindow.cpp:156</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ab89f1aa53bf89d77e5aeb7f8714b53d7"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ab89f1aa53bf89d77e5aeb7f8714b53d7">AdminWindow::showOnlineUsers</a></div><div class="ttdeci">void showOnlineUsers(const QString &amp;msg)</div><div class="ttdoc">Отображает список пользователей, которые находятся онлайн.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00416">adminwindow.cpp:416</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_abf5592e72174597b897c5f7bc4f681e8"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#abf5592e72174597b897c5f7bc4f681e8">AdminWindow::setupUI</a></div><div class="ttdeci">void setupUI()</div><div class="ttdoc">Создаёт и настраивает элементы интерфейса админ-панели.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00065">adminwindow.cpp:65</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_abf7394d14ca8b1304a173949d29ba767"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#abf7394d14ca8b1304a173949d29ba767">AdminWindow::readServerIp</a></div><div class="ttdeci">QString readServerIp() const</div><div class="ttdoc">Считывает IP-адрес сервера из конфигурационного файла.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00041">adminwindow.cpp:41</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ac783e92892d35abcdb411d649833a496"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ac783e92892d35abcdb411d649833a496">AdminWindow::changeSelectedUserPassword</a></div><div class="ttdeci">void changeSelectedUserPassword()</div><div class="ttdoc">Изменяет пароль выбранного пользователя.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00480">adminwindow.cpp:480</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_acb6478a5bd11ccab864e54ded7a1115f"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#acb6478a5bd11ccab864e54ded7a1115f">AdminWindow::onlineUsersLabel</a></div><div class="ttdeci">QLabel * onlineUsersLabel</div><div class="ttdoc">Текстовый блок со списком игроков онлайн.</div><div class="ttdef"><b>Определения</b> <a href="#l00154">adminwindow.h:154</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ad059c9bc4f6c81bf2b316f660bddc01a"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ad059c9bc4f6c81bf2b316f660bddc01a">AdminWindow::loadStats</a></div><div class="ttdeci">void loadStats()</div><div class="ttdoc">Запрашивает общую статистику игры у сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00228">adminwindow.cpp:228</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ae08c73ae7d3b55949ce98465a939e3dc"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ae08c73ae7d3b55949ce98465a939e3dc">AdminWindow::showStats</a></div><div class="ttdeci">void showStats(const QString &amp;msg)</div><div class="ttdoc">Отображает общую статистику игры в панели администратора.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00374">adminwindow.cpp:374</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ae126f52112ca0eb789a34176a45c0109"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ae126f52112ca0eb789a34176a45c0109">AdminWindow::statusLabel</a></div><div class="ttdeci">QLabel * statusLabel</div><div class="ttdoc">Текстовая метка состояния админ-панели.</div><div class="ttdef"><b>Определения</b> <a href="#l00144">adminwindow.h:144</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ae2a706c529c2b28fb786ebb6dc4a548d"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ae2a706c529c2b28fb786ebb6dc4a548d">AdminWindow::unbanSelectedUser</a></div><div class="ttdeci">void unbanSelectedUser()</div><div class="ttdoc">Разблокирует выбранного пользователя.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00457">adminwindow.cpp:457</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_ae51dadbbcbdbc5b16203a64e55495e50"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#ae51dadbbcbdbc5b16203a64e55495e50">AdminWindow::changePassBtn</a></div><div class="ttdeci">QPushButton * changePassBtn</div><div class="ttdef"><b>Определения</b> <a href="#l00139">adminwindow.h:139</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_aec89e2519a69b881d5dfb2d6235510db"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#aec89e2519a69b881d5dfb2d6235510db">AdminWindow::loadUsers</a></div><div class="ttdeci">void loadUsers()</div><div class="ttdoc">Запрашивает список пользователей у сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00212">adminwindow.cpp:212</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_af033906d72b15389e549dbb14e78a774"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#af033906d72b15389e549dbb14e78a774">AdminWindow::AdminWindow</a></div><div class="ttdeci">AdminWindow(const QString &amp;adminLogin, QWidget *parent=nullptr)</div><div class="ttdoc">Создаёт окно администратора.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/d77/adminwindow_8cpp_source.html#l00018">adminwindow.cpp:18</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_af29225ba7717522f12b2f271f06d2357"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#af29225ba7717522f12b2f271f06d2357">AdminWindow::adminLogin</a></div><div class="ttdeci">QString adminLogin</div><div class="ttdef"><b>Определения</b> <a href="#l00132">adminwindow.h:132</a></div></div>
+<div class="ttc" id="aclass_admin_window_html_af37fadc52c88593069b386f63a3a830a"><div class="ttname"><a href="../../d9/d11/class_admin_window.html#af37fadc52c88593069b386f63a3a830a">AdminWindow::unbanBtn</a></div><div class="ttdeci">QPushButton * unbanBtn</div><div class="ttdef"><b>Определения</b> <a href="#l00138">adminwindow.h:138</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../dir_6f666c76af9cb7406f3e9e0aac402ee9.html">AuthClient</a></li><li class="navelem"><a href="../../dd/d65/adminwindow_8h.html">adminwindow.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

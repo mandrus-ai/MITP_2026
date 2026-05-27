@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Edinobogic: Класс MyTcpServer</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Edinobogic<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Qt client-server educational project</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('../../',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d7/dab/class_my_tcp_server.html','../../','dd/d3e/class_my_tcp_server-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс MyTcpServer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP-сервер, принимающий подключения клиентов и обрабатывающий команды.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d73/mytcpserver_8h_source.html">mytcpserver.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф наследования:MyTcpServer:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф связей класса MyTcpServer:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:acf367c4695b4d160c7a2d25c2afaaec4" id="r_acf367c4695b4d160c7a2d25c2afaaec4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf367c4695b4d160c7a2d25c2afaaec4">MyTcpServer</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:acf367c4695b4d160c7a2d25c2afaaec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт сервер, запускает прослушивание порта и подключает базу данных.  <br /></td></tr>
+<tr class="memitem:a3e040c49dbefd65b9a58ab662fc9f7a2" id="r_a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3e040c49dbefd65b9a58ab662fc9f7a2">slotClientDisconnected</a> ()</td></tr>
+<tr class="memdesc:a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает отключение клиента и освобождает сокет.  <br /></td></tr>
+<tr class="memitem:a0ba7316ffe1a26c57fabde9e74b6c8dc" id="r_a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">slotNewConnection</a> ()</td></tr>
+<tr class="memdesc:a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает новое входящее клиентское подключение.  <br /></td></tr>
+<tr class="memitem:ab4a64d2eab985d723090963f5c8a2882" id="r_ab4a64d2eab985d723090963f5c8a2882"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab4a64d2eab985d723090963f5c8a2882">slotServerRead</a> ()</td></tr>
+<tr class="memdesc:ab4a64d2eab985d723090963f5c8a2882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает данные от клиента, вызывает обработчик команд и отправляет ответ.  <br /></td></tr>
+<tr class="memitem:ab39e651ff7c37c152215c02c225e79ef" id="r_ab39e651ff7c37c152215c02c225e79ef"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab39e651ff7c37c152215c02c225e79ef">~MyTcpServer</a> ()</td></tr>
+<tr class="memdesc:ab39e651ff7c37c152215c02c225e79ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливает сервер и закрывает соединение с базой данных.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a7d854875e1e02887023ec9aac1a1542c" id="r_a7d854875e1e02887023ec9aac1a1542c"><td class="memItemLeft">QTcpServer *&#160;</td><td class="memItemRight"><a class="el" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a></td></tr>
+<tr class="memdesc:a7d854875e1e02887023ec9aac1a1542c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект TCP-сервера, который слушает входящие подключения.  <br /></td></tr>
+<tr class="memitem:af73dd93d587855be87c9570fb69e0178" id="r_af73dd93d587855be87c9570fb69e0178"><td class="memItemLeft">QList&lt; QTcpSocket * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af73dd93d587855be87c9570fb69e0178">sockets</a></td></tr>
+<tr class="memdesc:af73dd93d587855be87c9570fb69e0178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список всех подключённых клиентских сокетов.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>TCP-сервер, принимающий подключения клиентов и обрабатывающий команды. </p>
+<p>Класс создаёт QTcpServer, слушает входящие подключения, читает данные из сокетов и отправляет ответы, полученные от функции <a class="el" href="../../dd/d7d/functionforserver_8cpp.html#a42b0fb9eae3817058b71487f7b1f4027" title="Обрабатывает строковую команду клиента.">parsing()</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d6/d73/mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00020">20</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="acf367c4695b4d160c7a2d25c2afaaec4" name="acf367c4695b4d160c7a2d25c2afaaec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf367c4695b4d160c7a2d25c2afaaec4">&#9670;&#160;</a></span>MyTcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MyTcpServer::MyTcpServer </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт сервер, запускает прослушивание порта и подключает базу данных. </p>
+<p>Инициализирует TCP-сервер, слоты и соединение с базой данных.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Родительский QObject.</td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект Qt. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">30</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    : QObject(parent)</div>
+<div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a> = <span class="keyword">new</span> QTcpServer(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    connect(<a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a>,</div>
+<div class="line"><span class="lineno">   36</span>            &amp;QTcpServer::newConnection,</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keyword">this</span>,</div>
+<div class="line"><span class="lineno">   38</span>            &amp;<a class="code hl_function" href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">MyTcpServer::slotNewConnection</a>);</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a>-&gt;listen(QHostAddress::Any, 33334))</div>
+<div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Server is NOT started&quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   45</span>    {</div>
+<div class="line"><span class="lineno">   46</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Server is started&quot;</span>;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">// Подключаем базу данных</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="../../d1/d4c/class_data_base.html#a456e55b6555ae35e0b54e26d4635839c">DataBase::connect</a>())</div>
+<div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;DATABASE CONNECTION FAILED!&quot;</span>;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="../../d1/d4c/class_data_base.html#a48e26be9648c9728f6373949b96135dc">DataBase::setUserPassword</a>(<span class="stringliteral">&quot;ksusha2003&quot;</span>, <span class="stringliteral">&quot;2003&quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_function" href="../../d1/d4c/class_data_base.html#a28e89384d538974cbc1a58c03e0f749a">DataBase::makeAdmin</a>(<span class="stringliteral">&quot;ksusha2003&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;ROLE:&quot;</span> &lt;&lt; <a class="code hl_function" href="../../d1/d4c/class_data_base.html#a40d2d22b57a53d6116193d793eccc61d">DataBase::getUserRole</a>(<span class="stringliteral">&quot;ksusha2003&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclass_data_base_html_a28e89384d538974cbc1a58c03e0f749a"><div class="ttname"><a href="../../d1/d4c/class_data_base.html#a28e89384d538974cbc1a58c03e0f749a">DataBase::makeAdmin</a></div><div class="ttdeci">static bool makeAdmin(const QString &amp;login)</div><div class="ttdoc">Назначает пользователю роль администратора.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00794">dataBase.h:794</a></div></div>
+<div class="ttc" id="aclass_data_base_html_a40d2d22b57a53d6116193d793eccc61d"><div class="ttname"><a href="../../d1/d4c/class_data_base.html#a40d2d22b57a53d6116193d793eccc61d">DataBase::getUserRole</a></div><div class="ttdeci">static QString getUserRole(const QString &amp;login)</div><div class="ttdoc">Возвращает роль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00775">dataBase.h:775</a></div></div>
+<div class="ttc" id="aclass_data_base_html_a456e55b6555ae35e0b54e26d4635839c"><div class="ttname"><a href="../../d1/d4c/class_data_base.html#a456e55b6555ae35e0b54e26d4635839c">DataBase::connect</a></div><div class="ttdeci">static bool connect()</div><div class="ttdoc">Подключается к SQLite-базе данных и создаёт необходимые таблицы.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00040">dataBase.h:40</a></div></div>
+<div class="ttc" id="aclass_data_base_html_a48e26be9648c9728f6373949b96135dc"><div class="ttname"><a href="../../d1/d4c/class_data_base.html#a48e26be9648c9728f6373949b96135dc">DataBase::setUserPassword</a></div><div class="ttdeci">static bool setUserPassword(const QString &amp;login, const QString &amp;password)</div><div class="ttdoc">Изменяет пароль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00950">dataBase.h:950</a></div></div>
+<div class="ttc" id="aclass_my_tcp_server_html_a0ba7316ffe1a26c57fabde9e74b6c8dc"><div class="ttname"><a href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">MyTcpServer::slotNewConnection</a></div><div class="ttdeci">void slotNewConnection()</div><div class="ttdoc">Обрабатывает новое входящее клиентское подключение.</div><div class="ttdef"><b>Определения</b> <a href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">mytcpserver.cpp:63</a></div></div>
+<div class="ttc" id="aclass_my_tcp_server_html_a7d854875e1e02887023ec9aac1a1542c"><div class="ttname"><a href="#a7d854875e1e02887023ec9aac1a1542c">MyTcpServer::mTcpServer</a></div><div class="ttdeci">QTcpServer * mTcpServer</div><div class="ttdoc">Объект TCP-сервера, который слушает входящие подключения.</div><div class="ttdef"><b>Определения</b> <a href="../../d6/d73/mytcpserver_8h_source.html#l00053">mytcpserver.h:53</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00040">DataBase::connect()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00775">DataBase::getUserRole()</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00794">DataBase::makeAdmin()</a>, <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00053">mTcpServer</a>, <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00950">DataBase::setUserPassword()</a> и <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">slotNewConnection()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab39e651ff7c37c152215c02c225e79ef" name="ab39e651ff7c37c152215c02c225e79ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39e651ff7c37c152215c02c225e79ef">&#9670;&#160;</a></span>~MyTcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MyTcpServer::~MyTcpServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Останавливает сервер и закрывает соединение с базой данных. </p>
+<p>Завершает работу сервера и закрывает базу данных. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00016">16</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>{</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="../../d1/d4c/class_data_base.html#a208cc3afd0b03988366c4aa0ae8f7cf9">DataBase::disconnect</a>();</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a>)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a>-&gt;close();</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span>}</div>
+<div class="ttc" id="aclass_data_base_html_a208cc3afd0b03988366c4aa0ae8f7cf9"><div class="ttname"><a href="../../d1/d4c/class_data_base.html#a208cc3afd0b03988366c4aa0ae8f7cf9">DataBase::disconnect</a></div><div class="ttdeci">static void disconnect()</div><div class="ttdoc">Закрывает активное соединение с базой данных.</div><div class="ttdef"><b>Определения</b> <a href="../../d4/d2e/data_base_8h_source.html#l00151">dataBase.h:151</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d4/d2e/data_base_8h_source.html#l00151">DataBase::disconnect()</a> и <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00053">mTcpServer</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a3e040c49dbefd65b9a58ab662fc9f7a2" name="a3e040c49dbefd65b9a58ab662fc9f7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e040c49dbefd65b9a58ab662fc9f7a2">&#9670;&#160;</a></span>slotClientDisconnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotClientDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обрабатывает отключение клиента и освобождает сокет. </p>
+<p>Закрывает и удаляет сокет отключившегося клиента. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00130">130</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    QTcpSocket *socket =</div>
+<div class="line"><span class="lineno">  133</span>        qobject_cast&lt;QTcpSocket*&gt;(sender());</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Client disconnected!&quot;</span>;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">if</span>(socket)</div>
+<div class="line"><span class="lineno">  138</span>    {</div>
+<div class="line"><span class="lineno">  139</span>        <a class="code hl_function" href="../../dd/d7d/functionforserver_8cpp.html#a924363c6319bfd98a034906a6cb8206e">removeOnlineUser</a>(socket-&gt;socketDescriptor());</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="#af73dd93d587855be87c9570fb69e0178">sockets</a>.removeAll(socket);</div>
+<div class="line"><span class="lineno">  141</span>        socket-&gt;close();</div>
+<div class="line"><span class="lineno">  142</span>        socket-&gt;deleteLater();</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="aclass_my_tcp_server_html_af73dd93d587855be87c9570fb69e0178"><div class="ttname"><a href="#af73dd93d587855be87c9570fb69e0178">MyTcpServer::sockets</a></div><div class="ttdeci">QList&lt; QTcpSocket * &gt; sockets</div><div class="ttdoc">Список всех подключённых клиентских сокетов.</div><div class="ttdef"><b>Определения</b> <a href="../../d6/d73/mytcpserver_8h_source.html#l00058">mytcpserver.h:58</a></div></div>
+<div class="ttc" id="afunctionforserver_8cpp_html_a924363c6319bfd98a034906a6cb8206e"><div class="ttname"><a href="../../dd/d7d/functionforserver_8cpp.html#a924363c6319bfd98a034906a6cb8206e">removeOnlineUser</a></div><div class="ttdeci">void removeOnlineUser(qintptr socketId)</div><div class="ttdoc">Удаляет отключившегося пользователя из списка онлайн.</div><div class="ttdef"><b>Определения</b> <a href="../../dd/d7d/functionforserver_8cpp_source.html#l00032">functionforserver.cpp:32</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00032">removeOnlineUser()</a> и <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00058">sockets</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">slotNewConnection()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+<a id="a0ba7316ffe1a26c57fabde9e74b6c8dc" name="a0ba7316ffe1a26c57fabde9e74b6c8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">&#9670;&#160;</a></span>slotNewConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotNewConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обрабатывает новое входящее клиентское подключение. </p>
+<p>Принимает новое подключение и настраивает сигналы клиентского сокета. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">63</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    QTcpSocket* clientSocket =</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_variable" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a>-&gt;nextPendingConnection();</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_variable" href="#af73dd93d587855be87c9570fb69e0178">sockets</a>.append(clientSocket);</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    connect(clientSocket,</div>
+<div class="line"><span class="lineno">   71</span>            &amp;QTcpSocket::readyRead,</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keyword">this</span>,</div>
+<div class="line"><span class="lineno">   73</span>            &amp;<a class="code hl_function" href="#ab4a64d2eab985d723090963f5c8a2882">MyTcpServer::slotServerRead</a>);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    connect(clientSocket,</div>
+<div class="line"><span class="lineno">   76</span>            &amp;QTcpSocket::disconnected,</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keyword">this</span>,</div>
+<div class="line"><span class="lineno">   78</span>            &amp;<a class="code hl_function" href="#a3e040c49dbefd65b9a58ab662fc9f7a2">MyTcpServer::slotClientDisconnected</a>);</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;New client connected!&quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="aclass_my_tcp_server_html_a3e040c49dbefd65b9a58ab662fc9f7a2"><div class="ttname"><a href="#a3e040c49dbefd65b9a58ab662fc9f7a2">MyTcpServer::slotClientDisconnected</a></div><div class="ttdeci">void slotClientDisconnected()</div><div class="ttdoc">Обрабатывает отключение клиента и освобождает сокет.</div><div class="ttdef"><b>Определения</b> <a href="../../d7/d80/mytcpserver_8cpp_source.html#l00130">mytcpserver.cpp:130</a></div></div>
+<div class="ttc" id="aclass_my_tcp_server_html_ab4a64d2eab985d723090963f5c8a2882"><div class="ttname"><a href="#ab4a64d2eab985d723090963f5c8a2882">MyTcpServer::slotServerRead</a></div><div class="ttdeci">void slotServerRead()</div><div class="ttdoc">Читает данные от клиента, вызывает обработчик команд и отправляет ответ.</div><div class="ttdef"><b>Определения</b> <a href="../../d7/d80/mytcpserver_8cpp_source.html#l00089">mytcpserver.cpp:89</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00053">mTcpServer</a>, <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00130">slotClientDisconnected()</a>, <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00089">slotServerRead()</a> и <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00058">sockets</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+
+</div>
+</div>
+<a id="ab4a64d2eab985d723090963f5c8a2882" name="ab4a64d2eab985d723090963f5c8a2882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a64d2eab985d723090963f5c8a2882">&#9670;&#160;</a></span>slotServerRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotServerRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Читает данные от клиента, вызывает обработчик команд и отправляет ответ. </p>
+<p>Читает запросы клиента и отправляет ответы.</p>
+<p>Клиент может отправить несколько команд подряд. Команды разделяются символом QChar(1), поэтому сервер должен обработать каждую команду отдельно. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00089">89</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    QTcpSocket *socket = <span class="keyword">static_cast&lt;</span>QTcpSocket*<span class="keyword">&gt;</span>(sender());</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!socket)</div>
+<div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Socket is null!&quot;</span>;</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    QByteArray array = socket-&gt;readAll();</div>
+<div class="line"><span class="lineno">  100</span>    QString receivedData = QString::fromUtf8(array);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Received raw:&quot;</span> &lt;&lt; receivedData;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    QStringList requests = receivedData.split(QChar(1), Qt::SkipEmptyParts);</div>
+<div class="line"><span class="lineno">  105</span>    qintptr socketId = socket-&gt;socketDescriptor();</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (QString request : requests)</div>
+<div class="line"><span class="lineno">  108</span>    {</div>
+<div class="line"><span class="lineno">  109</span>        request = request.trimmed();</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (request.isEmpty())</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Processing request:&quot;</span> &lt;&lt; request;</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        QByteArray response = <a class="code hl_function" href="../../dd/d7d/functionforserver_8cpp.html#a42b0fb9eae3817058b71487f7b1f4027">parsing</a>(request, socketId);</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Sending:&quot;</span> &lt;&lt; response;</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        socket-&gt;write(response);</div>
+<div class="line"><span class="lineno">  121</span>        socket-&gt;write(<span class="stringliteral">&quot;\x01&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    socket-&gt;flush();</div>
+<div class="line"><span class="lineno">  125</span>}</div>
+<div class="ttc" id="afunctionforserver_8cpp_html_a42b0fb9eae3817058b71487f7b1f4027"><div class="ttname"><a href="../../dd/d7d/functionforserver_8cpp.html#a42b0fb9eae3817058b71487f7b1f4027">parsing</a></div><div class="ttdeci">QByteArray parsing(const QString &amp;data_from_client, qintptr socketId)</div><div class="ttdoc">Обрабатывает строковую команду клиента.</div><div class="ttdef"><b>Определения</b> <a href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">functionforserver.cpp:48</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../dd/d7d/functionforserver_8cpp_source.html#l00048">parsing()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">slotNewConnection()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 8 --></div>
+</div>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 9 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a7d854875e1e02887023ec9aac1a1542c" name="a7d854875e1e02887023ec9aac1a1542c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d854875e1e02887023ec9aac1a1542c">&#9670;&#160;</a></span>mTcpServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpServer* MyTcpServer::mTcpServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объект TCP-сервера, который слушает входящие подключения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d6/d73/mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00053">53</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00030">MyTcpServer()</a>, <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">slotNewConnection()</a> и <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00016">~MyTcpServer()</a>.</p>
+
+</div>
+</div>
+<a id="af73dd93d587855be87c9570fb69e0178" name="af73dd93d587855be87c9570fb69e0178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73dd93d587855be87c9570fb69e0178">&#9670;&#160;</a></span>sockets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt;QTcpSocket*&gt; MyTcpServer::sockets</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Список всех подключённых клиентских сокетов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d6/d73/mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="../../d6/d73/mytcpserver_8h_source.html#l00058">58</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00130">slotClientDisconnected()</a> и <a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html#l00063">slotNewConnection()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="../../d6/d73/mytcpserver_8h_source.html">mytcpserver.h</a></li>
+<li><a class="el" href="../../d7/d80/mytcpserver_8cpp_source.html">mytcpserver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d7/dab/class_my_tcp_server.html">MyTcpServer</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

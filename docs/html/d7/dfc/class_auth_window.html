@@ -1,0 +1,1410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Edinobogic: Класс AuthWindow</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../codefolding.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Edinobogic<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Qt client-server educational project</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('../../',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('d7/dfc/class_auth_window.html','../../','d3/df6/class_auth_window-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс AuthWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Окно авторизации и регистрации пользователя.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф наследования:AuthWindow:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 0 --></div>
+</div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф связей класса AuthWindow:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 1 --></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af2cdee37721f32406db8fef61cdb3dc1" id="r_af2cdee37721f32406db8fef61cdb3dc1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af2cdee37721f32406db8fef61cdb3dc1">AuthWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:af2cdee37721f32406db8fef61cdb3dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт окно авторизации.  <br /></td></tr>
+<tr class="memitem:a4f110ced4881e0f20495175f73e5e572" id="r_a4f110ced4881e0f20495175f73e5e572"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4f110ced4881e0f20495175f73e5e572">~AuthWindow</a> ()</td></tr>
+<tr class="memdesc:a4f110ced4881e0f20495175f73e5e572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уничтожает окно авторизации.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a267b14144430a0c7c010ed7bbecd98cf" id="r_a267b14144430a0c7c010ed7bbecd98cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a267b14144430a0c7c010ed7bbecd98cf">applyPinkTheme</a> ()</td></tr>
+<tr class="memdesc:a267b14144430a0c7c010ed7bbecd98cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Применяет розовую тему оформления к окну.  <br /></td></tr>
+<tr class="memitem:acfa816a81344946693fb40cc0e9d2dd3" id="r_acfa816a81344946693fb40cc0e9d2dd3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acfa816a81344946693fb40cc0e9d2dd3">onAuth</a> ()</td></tr>
+<tr class="memdesc:acfa816a81344946693fb40cc0e9d2dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает нажатие кнопки входа.  <br /></td></tr>
+<tr class="memitem:ac0295f11e8ce5a09f8c8fab18ae319cb" id="r_ac0295f11e8ce5a09f8c8fab18ae319cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0295f11e8ce5a09f8c8fab18ae319cb">onConnected</a> ()</td></tr>
+<tr class="memdesc:ac0295f11e8ce5a09f8c8fab18ae319cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает успешное подключение к серверу.  <br /></td></tr>
+<tr class="memitem:af36af7adb308b143b907e77c51061ad5" id="r_af36af7adb308b143b907e77c51061ad5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af36af7adb308b143b907e77c51061ad5">onDisconnected</a> ()</td></tr>
+<tr class="memdesc:af36af7adb308b143b907e77c51061ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает отключение от сервера.  <br /></td></tr>
+<tr class="memitem:a636fd7d4a357348ea50ee2beac5b5b77" id="r_a636fd7d4a357348ea50ee2beac5b5b77"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a636fd7d4a357348ea50ee2beac5b5b77">onError</a> (const QString &amp;error)</td></tr>
+<tr class="memdesc:a636fd7d4a357348ea50ee2beac5b5b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает ошибку сетевого подключения.  <br /></td></tr>
+<tr class="memitem:a1f36b7142e4616a2cfde203babad846e" id="r_a1f36b7142e4616a2cfde203babad846e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1f36b7142e4616a2cfde203babad846e">onReadyRead</a> (QString msg)</td></tr>
+<tr class="memdesc:a1f36b7142e4616a2cfde203babad846e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает сообщение, полученное от сервера.  <br /></td></tr>
+<tr class="memitem:a55776c8410a60e161c7ca0038ed7fc45" id="r_a55776c8410a60e161c7ca0038ed7fc45"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55776c8410a60e161c7ca0038ed7fc45">onReg</a> ()</td></tr>
+<tr class="memdesc:a55776c8410a60e161c7ca0038ed7fc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает нажатие кнопки регистрации.  <br /></td></tr>
+<tr class="memitem:aceb776b0d168dbc5e3c645b6716dcbf3" id="r_aceb776b0d168dbc5e3c645b6716dcbf3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aceb776b0d168dbc5e3c645b6716dcbf3">sendToServer</a> (const QString &amp;data)</td></tr>
+<tr class="memdesc:aceb776b0d168dbc5e3c645b6716dcbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет строковую команду на сервер.  <br /></td></tr>
+<tr class="memitem:add8d96dc062a1cb9a824965d5d7eb0c5" id="r_add8d96dc062a1cb9a824965d5d7eb0c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add8d96dc062a1cb9a824965d5d7eb0c5">setupUI</a> ()</td></tr>
+<tr class="memdesc:add8d96dc062a1cb9a824965d5d7eb0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт элементы интерфейса окна авторизации и регистрации.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:abf7e294c205cce29861cf49e95b0a28a" id="r_abf7e294c205cce29861cf49e95b0a28a"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a></td></tr>
+<tr class="memitem:a8d1d9fc53e28cb42b8d574343d134bef" id="r_a8d1d9fc53e28cb42b8d574343d134bef"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a></td></tr>
+<tr class="memitem:a673e0f1bca203c2dea1bcc3a63c9b0e2" id="r_a673e0f1bca203c2dea1bcc3a63c9b0e2"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a></td></tr>
+<tr class="memitem:a52411b9ca82e2c6ec2f37d02dbe2c3f1" id="r_a52411b9ca82e2c6ec2f37d02dbe2c3f1"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a></td></tr>
+<tr class="memitem:a37fe604a4d5267850ae4dff37a267142" id="r_a37fe604a4d5267850ae4dff37a267142"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a37fe604a4d5267850ae4dff37a267142">buffer</a></td></tr>
+<tr class="memitem:a108f1032d00ec8f9aa39eafc71dced5b" id="r_a108f1032d00ec8f9aa39eafc71dced5b"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a></td></tr>
+<tr class="memitem:a1cbb9243fc1764d7321e510562525aa4" id="r_a1cbb9243fc1764d7321e510562525aa4"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a></td></tr>
+<tr class="memitem:a1a2068d604043c9981371417deceda5e" id="r_a1a2068d604043c9981371417deceda5e"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a></td></tr>
+<tr class="memitem:aff11d44a7f6e2a15ad4c6d8840abf2ad" id="r_aff11d44a7f6e2a15ad4c6d8840abf2ad"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">regDisplayName</a></td></tr>
+<tr class="memitem:a6ce78a6f54ef7835d331c1084a32f7d1" id="r_a6ce78a6f54ef7835d331c1084a32f7d1"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a6ce78a6f54ef7835d331c1084a32f7d1">regLogin</a></td></tr>
+<tr class="memitem:afa3172cf7462637265d1c8173c5fef70" id="r_afa3172cf7462637265d1c8173c5fef70"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a></td></tr>
+<tr class="memitem:a5957a33410a2bbb0b4fa4bd25189fafb" id="r_a5957a33410a2bbb0b4fa4bd25189fafb"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a></td></tr>
+<tr class="memitem:a1c4dcc2a6a2a18260e15a926f9f88cb3" id="r_a1c4dcc2a6a2a18260e15a926f9f88cb3"><td class="memItemLeft">QTabWidget *&#160;</td><td class="memItemRight"><a class="el" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Окно авторизации и регистрации пользователя. </p>
+<p>Класс отвечает за подключение к серверу, вход пользователя, регистрацию нового аккаунта и запуск игры после успешной авторизации. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00025">25</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="af2cdee37721f32406db8fef61cdb3dc1" name="af2cdee37721f32406db8fef61cdb3dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cdee37721f32406db8fef61cdb3dc1">&#9670;&#160;</a></span>AuthWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AuthWindow::AuthWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создаёт окно авторизации. </p>
+<p>Настраивает интерфейс, применяет тему оформления, подключает сигналы сетевого клиента и выполняет подключение к серверу.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Родительский виджет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">20</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>    : QMainWindow(parent)</div>
+<div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_function" href="#add8d96dc062a1cb9a824965d5d7eb0c5">setupUI</a>();</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="#a267b14144430a0c7c010ed7bbecd98cf">applyPinkTheme</a>();</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    connect(<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>(), &amp;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">SingletonClient::messageFromServer</a>, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a1f36b7142e4616a2cfde203babad846e">AuthWindow::onReadyRead</a>);</div>
+<div class="line"><span class="lineno">   27</span>    connect(<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>(), &amp;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">SingletonClient::connected</a>, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#ac0295f11e8ce5a09f8c8fab18ae319cb">AuthWindow::onConnected</a>);</div>
+<div class="line"><span class="lineno">   28</span>    connect(<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>(), &amp;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">SingletonClient::disconnected</a>, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#af36af7adb308b143b907e77c51061ad5">AuthWindow::onDisconnected</a>);</div>
+<div class="line"><span class="lineno">   29</span>    connect(<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>(), &amp;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">SingletonClient::errorOccurred</a>, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a636fd7d4a357348ea50ee2beac5b5b77">AuthWindow::onError</a>);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    QString ip = <span class="stringliteral">&quot;127.0.0.1&quot;</span>;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    QFile file(<span class="stringliteral">&quot;server_config.txt&quot;</span>);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (file.open(QIODevice::ReadOnly | QIODevice::Text))</div>
+<div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        ip = QString(file.readAll()).trimmed();</div>
+<div class="line"><span class="lineno">   38</span>        file.close();</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>()-&gt;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a222001e1cf4a7994582167786ffd07c4">connectToServer</a>(ip, 33334);</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+<div class="ttc" id="aclass_auth_window_html_a1f36b7142e4616a2cfde203babad846e"><div class="ttname"><a href="#a1f36b7142e4616a2cfde203babad846e">AuthWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead(QString msg)</div><div class="ttdoc">Обрабатывает сообщение, полученное от сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00294">authwindow.cpp:294</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a267b14144430a0c7c010ed7bbecd98cf"><div class="ttname"><a href="#a267b14144430a0c7c010ed7bbecd98cf">AuthWindow::applyPinkTheme</a></div><div class="ttdeci">void applyPinkTheme()</div><div class="ttdoc">Применяет розовую тему оформления к окну.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00046">authwindow.cpp:46</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a636fd7d4a357348ea50ee2beac5b5b77"><div class="ttname"><a href="#a636fd7d4a357348ea50ee2beac5b5b77">AuthWindow::onError</a></div><div class="ttdeci">void onError(const QString &amp;error)</div><div class="ttdoc">Обрабатывает ошибку сетевого подключения.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00415">authwindow.cpp:415</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_ac0295f11e8ce5a09f8c8fab18ae319cb"><div class="ttname"><a href="#ac0295f11e8ce5a09f8c8fab18ae319cb">AuthWindow::onConnected</a></div><div class="ttdeci">void onConnected()</div><div class="ttdoc">Обрабатывает успешное подключение к серверу.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00401">authwindow.cpp:401</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_add8d96dc062a1cb9a824965d5d7eb0c5"><div class="ttname"><a href="#add8d96dc062a1cb9a824965d5d7eb0c5">AuthWindow::setupUI</a></div><div class="ttdeci">void setupUI()</div><div class="ttdoc">Создаёт элементы интерфейса окна авторизации и регистрации.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00128">authwindow.cpp:128</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_af36af7adb308b143b907e77c51061ad5"><div class="ttname"><a href="#af36af7adb308b143b907e77c51061ad5">AuthWindow::onDisconnected</a></div><div class="ttdeci">void onDisconnected()</div><div class="ttdoc">Обрабатывает отключение от сервера.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00408">authwindow.cpp:408</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a1d5875c5329637cd331d9efa06f5c3e1"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a></div><div class="ttdeci">static SingletonClient * getInstance()</div><div class="ttdoc">Возвращает единственный экземпляр клиента.</div><div class="ttdef"><b>Определения</b> <a href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00031">AuthClient/singletonclient.cpp:31</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a222001e1cf4a7994582167786ffd07c4"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a222001e1cf4a7994582167786ffd07c4">SingletonClient::connectToServer</a></div><div class="ttdeci">void connectToServer(const QString &amp;host, quint16 port)</div><div class="ttdoc">Подключается к TCP-серверу.</div><div class="ttdef"><b>Определения</b> <a href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00041">AuthClient/singletonclient.cpp:41</a></div></div>
+<div class="ttc" id="aclass_singleton_client_html_a55280c4c20aecfc35e0f824ed7968703"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">SingletonClient::disconnected</a></div><div class="ttdeci">void disconnected()</div><div class="ttdoc">Сигнал об отключении от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_a666f928cce91cbb112e5f6b5f1667b3a"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">SingletonClient::connected</a></div><div class="ttdeci">void connected()</div><div class="ttdoc">Сигнал об успешном подключении к серверу.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_aa2ec58e445b4185bd82034031c30feac"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">SingletonClient::messageFromServer</a></div><div class="ttdeci">void messageFromServer(const QString &amp;msg)</div><div class="ttdoc">Сигнал о получении сообщения от сервера.</div></div>
+<div class="ttc" id="aclass_singleton_client_html_ac8e7ee3e0024543617e259670cf35ec9"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">SingletonClient::errorOccurred</a></div><div class="ttdeci">void errorOccurred(const QString &amp;err)</div><div class="ttdoc">Сигнал об ошибке соединения.</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00046">applyPinkTheme()</a>, <a class="el" href="../../d5/d82/class_singleton_client.html#a666f928cce91cbb112e5f6b5f1667b3a">SingletonClient::connected()</a>, <a class="el" href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00041">SingletonClient::connectToServer()</a>, <a class="el" href="../../d5/d82/class_singleton_client.html#a55280c4c20aecfc35e0f824ed7968703">SingletonClient::disconnected()</a>, <a class="el" href="../../d5/d82/class_singleton_client.html#ac8e7ee3e0024543617e259670cf35ec9">SingletonClient::errorOccurred()</a>, <a class="el" href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00031">SingletonClient::getInstance()</a>, <a class="el" href="../../d5/d82/class_singleton_client.html#aa2ec58e445b4185bd82034031c30feac">SingletonClient::messageFromServer()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00401">onConnected()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00408">onDisconnected()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00415">onError()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 2 --></div>
+</div>
+
+</div>
+</div>
+<a id="a4f110ced4881e0f20495175f73e5e572" name="a4f110ced4881e0f20495175f73e5e572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f110ced4881e0f20495175f73e5e572">&#9670;&#160;</a></span>~AuthWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AuthWindow::~AuthWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уничтожает окно авторизации. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00044">44</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a267b14144430a0c7c010ed7bbecd98cf" name="a267b14144430a0c7c010ed7bbecd98cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267b14144430a0c7c010ed7bbecd98cf">&#9670;&#160;</a></span>applyPinkTheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::applyPinkTheme </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Применяет розовую тему оформления к окну. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00046">46</a></p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    this-&gt;setStyleSheet(</div>
+<div class="line"><span class="lineno">   49</span>        <span class="stringliteral">&quot;QMainWindow {&quot;</span></div>
+<div class="line"><span class="lineno">   50</span>        <span class="stringliteral">&quot;   background: qlineargradient(x1:0, y1:0, x2:1, y2:1,&quot;</span></div>
+<div class="line"><span class="lineno">   51</span>        <span class="stringliteral">&quot;                               stop:0 #FFB6C1, stop:1 #FF69B4);&quot;</span></div>
+<div class="line"><span class="lineno">   52</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>        <span class="stringliteral">&quot;QLabel {&quot;</span></div>
+<div class="line"><span class="lineno">   55</span>        <span class="stringliteral">&quot;   color: #8B0045;&quot;</span></div>
+<div class="line"><span class="lineno">   56</span>        <span class="stringliteral">&quot;   font-weight: bold;&quot;</span></div>
+<div class="line"><span class="lineno">   57</span>        <span class="stringliteral">&quot;   font-size: 12px;&quot;</span></div>
+<div class="line"><span class="lineno">   58</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>        <span class="stringliteral">&quot;QLineEdit {&quot;</span></div>
+<div class="line"><span class="lineno">   61</span>        <span class="stringliteral">&quot;   background-color: #FFF0F5;&quot;</span></div>
+<div class="line"><span class="lineno">   62</span>        <span class="stringliteral">&quot;   border: 2px solid #FF69B4;&quot;</span></div>
+<div class="line"><span class="lineno">   63</span>        <span class="stringliteral">&quot;   border-radius: 8px;&quot;</span></div>
+<div class="line"><span class="lineno">   64</span>        <span class="stringliteral">&quot;   padding: 6px;&quot;</span></div>
+<div class="line"><span class="lineno">   65</span>        <span class="stringliteral">&quot;   color: #8B0045;&quot;</span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="stringliteral">&quot;   font-size: 11px;&quot;</span></div>
+<div class="line"><span class="lineno">   67</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>        <span class="stringliteral">&quot;QLineEdit:focus {&quot;</span></div>
+<div class="line"><span class="lineno">   70</span>        <span class="stringliteral">&quot;   border: 2px solid #FF1493;&quot;</span></div>
+<div class="line"><span class="lineno">   71</span>        <span class="stringliteral">&quot;   background-color: #FFFFFF;&quot;</span></div>
+<div class="line"><span class="lineno">   72</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>        <span class="stringliteral">&quot;QPushButton {&quot;</span></div>
+<div class="line"><span class="lineno">   75</span>        <span class="stringliteral">&quot;   background: qlineargradient(x1:0, y1:0, x2:0, y2:1,&quot;</span></div>
+<div class="line"><span class="lineno">   76</span>        <span class="stringliteral">&quot;                               stop:0 #FF69B4, stop:1 #FF1493);&quot;</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="stringliteral">&quot;   color: white;&quot;</span></div>
+<div class="line"><span class="lineno">   78</span>        <span class="stringliteral">&quot;   border: none;&quot;</span></div>
+<div class="line"><span class="lineno">   79</span>        <span class="stringliteral">&quot;   border-radius: 10px;&quot;</span></div>
+<div class="line"><span class="lineno">   80</span>        <span class="stringliteral">&quot;   padding: 8px 16px;&quot;</span></div>
+<div class="line"><span class="lineno">   81</span>        <span class="stringliteral">&quot;   font-weight: bold;&quot;</span></div>
+<div class="line"><span class="lineno">   82</span>        <span class="stringliteral">&quot;   font-size: 12px;&quot;</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="stringliteral">&quot;   min-width: 120px;&quot;</span></div>
+<div class="line"><span class="lineno">   84</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>        <span class="stringliteral">&quot;QPushButton:hover {&quot;</span></div>
+<div class="line"><span class="lineno">   87</span>        <span class="stringliteral">&quot;   background: qlineargradient(x1:0, y1:0, x2:0, y2:1,&quot;</span></div>
+<div class="line"><span class="lineno">   88</span>        <span class="stringliteral">&quot;                               stop:0 #FF1493, stop:1 #C71585);&quot;</span></div>
+<div class="line"><span class="lineno">   89</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <span class="stringliteral">&quot;QPushButton:pressed {&quot;</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="stringliteral">&quot;   background: #C71585;&quot;</span></div>
+<div class="line"><span class="lineno">   93</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        <span class="stringliteral">&quot;QPushButton:disabled {&quot;</span></div>
+<div class="line"><span class="lineno">   96</span>        <span class="stringliteral">&quot;   background: #DDA0DD;&quot;</span></div>
+<div class="line"><span class="lineno">   97</span>        <span class="stringliteral">&quot;   color: #FFE4E1;&quot;</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        <span class="stringliteral">&quot;QTabWidget::pane {&quot;</span></div>
+<div class="line"><span class="lineno">  101</span>        <span class="stringliteral">&quot;   background-color: #FFF0F5;&quot;</span></div>
+<div class="line"><span class="lineno">  102</span>        <span class="stringliteral">&quot;   border: 2px solid #FF69B4;&quot;</span></div>
+<div class="line"><span class="lineno">  103</span>        <span class="stringliteral">&quot;   border-radius: 10px;&quot;</span></div>
+<div class="line"><span class="lineno">  104</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>        <span class="stringliteral">&quot;QTabBar::tab {&quot;</span></div>
+<div class="line"><span class="lineno">  107</span>        <span class="stringliteral">&quot;   background: #FFB6C1;&quot;</span></div>
+<div class="line"><span class="lineno">  108</span>        <span class="stringliteral">&quot;   color: #8B0045;&quot;</span></div>
+<div class="line"><span class="lineno">  109</span>        <span class="stringliteral">&quot;   padding: 8px 20px;&quot;</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="stringliteral">&quot;   margin: 2px;&quot;</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="stringliteral">&quot;   border-top-left-radius: 8px;&quot;</span></div>
+<div class="line"><span class="lineno">  112</span>        <span class="stringliteral">&quot;   border-top-right-radius: 8px;&quot;</span></div>
+<div class="line"><span class="lineno">  113</span>        <span class="stringliteral">&quot;   font-weight: bold;&quot;</span></div>
+<div class="line"><span class="lineno">  114</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        <span class="stringliteral">&quot;QTabBar::tab:selected {&quot;</span></div>
+<div class="line"><span class="lineno">  117</span>        <span class="stringliteral">&quot;   background: qlineargradient(x1:0, y1:0, x2:0, y2:1,&quot;</span></div>
+<div class="line"><span class="lineno">  118</span>        <span class="stringliteral">&quot;                               stop:0 #FF69B4, stop:1 #FF1493);&quot;</span></div>
+<div class="line"><span class="lineno">  119</span>        <span class="stringliteral">&quot;   color: white;&quot;</span></div>
+<div class="line"><span class="lineno">  120</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>        <span class="stringliteral">&quot;QTabBar::tab:hover:!selected {&quot;</span></div>
+<div class="line"><span class="lineno">  123</span>        <span class="stringliteral">&quot;   background: #FFC0CB;&quot;</span></div>
+<div class="line"><span class="lineno">  124</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><span class="lineno">  125</span>        );</div>
+<div class="line"><span class="lineno">  126</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 3 --></div>
+</div>
+
+</div>
+</div>
+<a id="acfa816a81344946693fb40cc0e9d2dd3" name="acfa816a81344946693fb40cc0e9d2dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa816a81344946693fb40cc0e9d2dd3">&#9670;&#160;</a></span>onAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onAuth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает нажатие кнопки входа. </p>
+<p>Проверяет заполненность полей логина и пароля, после чего отправляет команду авторизации на сервер. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">245</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{</div>
+<div class="line"><span class="lineno">  247</span>    QString login = <a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  248</span>    QString pass = <a class="code hl_variable" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">if</span>(login.isEmpty() || pass.isEmpty()) {</div>
+<div class="line"><span class="lineno">  251</span>        <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setText(<span class="stringliteral">&quot;Please fill in all fields!&quot;</span>);</div>
+<div class="line"><span class="lineno">  252</span>        <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  254</span>    }</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setText(<span class="stringliteral">&quot;Checking...&quot;</span>);</div>
+<div class="line"><span class="lineno">  257</span>    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: orange; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  258</span>    <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>    <a class="code hl_function" href="#aceb776b0d168dbc5e3c645b6716dcbf3">sendToServer</a>(QString(<span class="stringliteral">&quot;auth&amp;%1&amp;%2&quot;</span>).arg(login).arg(pass));</div>
+<div class="line"><span class="lineno">  261</span>}</div>
+<div class="ttc" id="aclass_auth_window_html_a52411b9ca82e2c6ec2f37d02dbe2c3f1"><div class="ttname"><a href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">AuthWindow::authStatus</a></div><div class="ttdeci">QLabel * authStatus</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00114">authwindow.h:114</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a673e0f1bca203c2dea1bcc3a63c9b0e2"><div class="ttname"><a href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">AuthWindow::authPass</a></div><div class="ttdeci">QLineEdit * authPass</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00112">authwindow.h:112</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a8d1d9fc53e28cb42b8d574343d134bef"><div class="ttname"><a href="#a8d1d9fc53e28cb42b8d574343d134bef">AuthWindow::authLogin</a></div><div class="ttdeci">QLineEdit * authLogin</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00111">authwindow.h:111</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_abf7e294c205cce29861cf49e95b0a28a"><div class="ttname"><a href="#abf7e294c205cce29861cf49e95b0a28a">AuthWindow::authBtn</a></div><div class="ttdeci">QPushButton * authBtn</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00113">authwindow.h:113</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_aceb776b0d168dbc5e3c645b6716dcbf3"><div class="ttname"><a href="#aceb776b0d168dbc5e3c645b6716dcbf3">AuthWindow::sendToServer</a></div><div class="ttdeci">void sendToServer(const QString &amp;data)</div><div class="ttdoc">Отправляет строковую команду на сервер.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00239">authwindow.cpp:239</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00113">authBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00111">authLogin</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00112">authPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00114">authStatus</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00239">sendToServer()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 4 --></div>
+</div>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 5 --></div>
+</div>
+
+</div>
+</div>
+<a id="ac0295f11e8ce5a09f8c8fab18ae319cb" name="ac0295f11e8ce5a09f8c8fab18ae319cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0295f11e8ce5a09f8c8fab18ae319cb">&#9670;&#160;</a></span>onConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onConnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает успешное подключение к серверу. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00401">401</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  402</span>{</div>
+<div class="line"><span class="lineno">  403</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setText(<span class="stringliteral">&quot;✓ Connected to server&quot;</span>);</div>
+<div class="line"><span class="lineno">  404</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: green; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  405</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Connected to server!&quot;</span>;</div>
+<div class="line"><span class="lineno">  406</span>}</div>
+<div class="ttc" id="aclass_auth_window_html_a108f1032d00ec8f9aa39eafc71dced5b"><div class="ttname"><a href="#a108f1032d00ec8f9aa39eafc71dced5b">AuthWindow::connectionStatus</a></div><div class="ttdeci">QLabel * connectionStatus</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00123">authwindow.h:123</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00123">connectionStatus</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 6 --></div>
+</div>
+
+</div>
+</div>
+<a id="af36af7adb308b143b907e77c51061ad5" name="af36af7adb308b143b907e77c51061ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36af7adb308b143b907e77c51061ad5">&#9670;&#160;</a></span>onDisconnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает отключение от сервера. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00408">408</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  409</span>{</div>
+<div class="line"><span class="lineno">  410</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setText(<span class="stringliteral">&quot;✗ Disconnected from server&quot;</span>);</div>
+<div class="line"><span class="lineno">  411</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  412</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Disconnected from server!&quot;</span>;</div>
+<div class="line"><span class="lineno">  413</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00123">connectionStatus</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 7 --></div>
+</div>
+
+</div>
+</div>
+<a id="a636fd7d4a357348ea50ee2beac5b5b77" name="a636fd7d4a357348ea50ee2beac5b5b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636fd7d4a357348ea50ee2beac5b5b77">&#9670;&#160;</a></span>onError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onError </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает ошибку сетевого подключения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Текст ошибки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00415">415</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  416</span>{</div>
+<div class="line"><span class="lineno">  417</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setText(<span class="stringliteral">&quot;Error: &quot;</span> + error);</div>
+<div class="line"><span class="lineno">  418</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  419</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Socket error:&quot;</span> &lt;&lt; error;</div>
+<div class="line"><span class="lineno">  420</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00123">connectionStatus</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 8 --></div>
+</div>
+
+</div>
+</div>
+<a id="a1f36b7142e4616a2cfde203babad846e" name="a1f36b7142e4616a2cfde203babad846e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f36b7142e4616a2cfde203babad846e">&#9670;&#160;</a></span>onReadyRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onReadyRead </td>
+          <td>(</td>
+          <td class="paramtype">QString</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает сообщение, полученное от сервера. </p>
+<p>Разбирает ответы авторизации и регистрации. При успешном входе открывает админ-панель для администратора или запускает игру для обычного пользователя.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Сообщение от сервера. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">294</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  295</span>{</div>
+<div class="line"><span class="lineno">  296</span>    msg.remove(QChar(1));</div>
+<div class="line"><span class="lineno">  297</span>    msg = msg.trimmed();</div>
+<div class="line"><span class="lineno">  298</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Received:&quot;</span> &lt;&lt; msg;</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span>(msg.startsWith(<span class="stringliteral">&quot;auth_success&quot;</span>))</div>
+<div class="line"><span class="lineno">  301</span>        {</div>
+<div class="line"><span class="lineno">  302</span>            <span class="comment">// Формат: auth_success&amp;login|userId|score|coins|level|skin|background|xp</span></div>
+<div class="line"><span class="lineno">  303</span>            QStringList parts = msg.split(<span class="charliteral">&#39;&amp;&#39;</span>);</div>
+<div class="line"><span class="lineno">  304</span>            <span class="keywordflow">if</span>(parts.size() &gt;= 2) {</div>
+<div class="line"><span class="lineno">  305</span>                QStringList dataParts = parts[1].split(<span class="charliteral">&#39;|&#39;</span>);</div>
+<div class="line"><span class="lineno">  306</span>                <span class="keywordflow">if</span>(dataParts.size() &gt;= 8) {</div>
+<div class="line"><span class="lineno">  307</span>                    QString login = dataParts[0];</div>
+<div class="line"><span class="lineno">  308</span>                    QString userId = dataParts[1];</div>
+<div class="line"><span class="lineno">  309</span>                    QString score = dataParts[2];</div>
+<div class="line"><span class="lineno">  310</span>                    QString coins = dataParts[3];</div>
+<div class="line"><span class="lineno">  311</span>                    QString level = dataParts[4];</div>
+<div class="line"><span class="lineno">  312</span>                    QString skin = dataParts[5];</div>
+<div class="line"><span class="lineno">  313</span>                    QString background = dataParts[6];</div>
+<div class="line"><span class="lineno">  314</span>                    QString xp = dataParts[7];</div>
+<div class="line"><span class="lineno">  315</span>                    QString role = dataParts.size() &gt; 8 ? dataParts[8] : <span class="stringliteral">&quot;player&quot;</span>;</div>
+<div class="line"><span class="lineno">  316</span>                    QString socketId = dataParts.size() &gt; 9 ? dataParts[9] : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>                    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setText(<span class="stringliteral">&quot;Login successful!&quot;</span>);</div>
+<div class="line"><span class="lineno">  319</span>                    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: green; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  320</span> </div>
+<div class="line"><span class="lineno">  321</span>                    QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Success&quot;</span>, QString(<span class="stringliteral">&quot;Welcome, %1!\nYour stats:\nScore: %2\nCoins: %3\nLevel: %4&quot;</span>)</div>
+<div class="line"><span class="lineno">  322</span>                                                                  .arg(login).arg(score).arg(coins).arg(level));</div>
+<div class="line"><span class="lineno">  323</span>                    <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  324</span> </div>
+<div class="line"><span class="lineno">  325</span>                    <span class="keywordflow">if</span> (role == <span class="stringliteral">&quot;admin&quot;</span>)</div>
+<div class="line"><span class="lineno">  326</span>                    {</div>
+<div class="line"><span class="lineno">  327</span>                        AdminWindow* adminWindow = <span class="keyword">new</span> AdminWindow(<a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a>-&gt;text().trimmed());</div>
+<div class="line"><span class="lineno">  328</span>                        adminWindow-&gt;show();</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>                        QTimer::singleShot(300, <span class="keyword">this</span>, [<span class="keyword">this</span>]() {</div>
+<div class="line"><span class="lineno">  331</span>                            this-&gt;close();</div>
+<div class="line"><span class="lineno">  332</span>                        });</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>                        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  335</span>                    }</div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>                    <span class="comment">// ЗАПУСК ИГРЫ с передачей всех данных</span></div>
+<div class="line"><span class="lineno">  338</span>                    QString pythonPath = <span class="stringliteral">&quot;python&quot;</span>;</div>
+<div class="line"><span class="lineno">  339</span>                    <span class="comment">// ЗАПУСК ГОТОВОЙ ИГРЫ .EXE</span></div>
+<div class="line"><span class="lineno">  340</span>                    QString gamePath =</div>
+<div class="line"><span class="lineno">  341</span>                        QCoreApplication::applicationDirPath()</div>
+<div class="line"><span class="lineno">  342</span>                        + <span class="stringliteral">&quot;/AlienInvasion/game_launcher.exe&quot;</span>;</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>                    QStringList args;</div>
+<div class="line"><span class="lineno">  345</span>                    args &lt;&lt; login;</div>
+<div class="line"><span class="lineno">  346</span>                    args &lt;&lt; <span class="stringliteral">&quot;player&quot;</span>;</div>
+<div class="line"><span class="lineno">  347</span>                    args &lt;&lt; userId;</div>
+<div class="line"><span class="lineno">  348</span>                    args &lt;&lt; score;</div>
+<div class="line"><span class="lineno">  349</span>                    args &lt;&lt; coins;</div>
+<div class="line"><span class="lineno">  350</span>                    args &lt;&lt; level;</div>
+<div class="line"><span class="lineno">  351</span>                    args &lt;&lt; skin;</div>
+<div class="line"><span class="lineno">  352</span>                    args &lt;&lt; background;</div>
+<div class="line"><span class="lineno">  353</span>                    args &lt;&lt; xp;</div>
+<div class="line"><span class="lineno">  354</span>                    args &lt;&lt; socketId;</div>
+<div class="line"><span class="lineno">  355</span> </div>
+<div class="line"><span class="lineno">  356</span>                    qDebug() &lt;&lt; <span class="stringliteral">&quot;Starting game:&quot;</span> &lt;&lt; gamePath;</div>
+<div class="line"><span class="lineno">  357</span>                    qDebug() &lt;&lt; <span class="stringliteral">&quot;Starting game with args:&quot;</span> &lt;&lt; args;</div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>                    <span class="keywordtype">bool</span> started = QProcess::startDetached(gamePath, args);</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>                    <span class="keywordflow">if</span> (!started)</div>
+<div class="line"><span class="lineno">  362</span>                    {</div>
+<div class="line"><span class="lineno">  363</span>                        QMessageBox::critical(<span class="keyword">this</span>, <span class="stringliteral">&quot;Ошибка&quot;</span>, <span class="stringliteral">&quot;Не удалось запустить игру.&quot;</span>);</div>
+<div class="line"><span class="lineno">  364</span>                        <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  365</span>                        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  366</span>                    }</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>                    QTimer::singleShot(300, <span class="keyword">this</span>, [<span class="keyword">this</span>]() {</div>
+<div class="line"><span class="lineno">  369</span>                        this-&gt;close();</div>
+<div class="line"><span class="lineno">  370</span>                    });</div>
+<div class="line"><span class="lineno">  371</span>                }</div>
+<div class="line"><span class="lineno">  372</span>            }</div>
+<div class="line"><span class="lineno">  373</span>        }</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(msg.startsWith(<span class="stringliteral">&quot;auth_failed&quot;</span>))</div>
+<div class="line"><span class="lineno">  375</span>        {</div>
+<div class="line"><span class="lineno">  376</span>            QString error = msg.split(<span class="charliteral">&#39;&amp;&#39;</span>).value(1);</div>
+<div class="line"><span class="lineno">  377</span>            <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setText(error);</div>
+<div class="line"><span class="lineno">  378</span>            <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  379</span>            <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  380</span>        }</div>
+<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(msg.startsWith(<span class="stringliteral">&quot;reg_success&quot;</span>))</div>
+<div class="line"><span class="lineno">  382</span>        {</div>
+<div class="line"><span class="lineno">  383</span>            QString login = msg.split(<span class="charliteral">&#39;&amp;&#39;</span>).value(1);</div>
+<div class="line"><span class="lineno">  384</span>            <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setText(<span class="stringliteral">&quot;Registration successful!&quot;</span>);</div>
+<div class="line"><span class="lineno">  385</span>            <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: green; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  386</span>            QMessageBox::information(<span class="keyword">this</span>, <span class="stringliteral">&quot;Success&quot;</span>, <span class="stringliteral">&quot;Registration completed!\nYou can now login.&quot;</span>);</div>
+<div class="line"><span class="lineno">  387</span>            <a class="code hl_variable" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a>-&gt;setCurrentIndex(0);</div>
+<div class="line"><span class="lineno">  388</span>            <a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a>-&gt;setText(login);</div>
+<div class="line"><span class="lineno">  389</span>            <a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  390</span>        }</div>
+<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(msg.startsWith(<span class="stringliteral">&quot;reg_failed&quot;</span>))</div>
+<div class="line"><span class="lineno">  392</span>        {</div>
+<div class="line"><span class="lineno">  393</span>            QString error = msg.split(<span class="charliteral">&#39;&amp;&#39;</span>).value(1);</div>
+<div class="line"><span class="lineno">  394</span>            <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setText(error);</div>
+<div class="line"><span class="lineno">  395</span>            <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  396</span>            <a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>-&gt;setEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  397</span>        }</div>
+<div class="line"><span class="lineno">  398</span>    }</div>
+<div class="ttc" id="aclass_auth_window_html_a1c4dcc2a6a2a18260e15a926f9f88cb3"><div class="ttname"><a href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">AuthWindow::tabWidget</a></div><div class="ttdeci">QTabWidget * tabWidget</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00110">authwindow.h:110</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a1cbb9243fc1764d7321e510562525aa4"><div class="ttname"><a href="#a1cbb9243fc1764d7321e510562525aa4">AuthWindow::regBtn</a></div><div class="ttdeci">QPushButton * regBtn</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00120">authwindow.h:120</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a5957a33410a2bbb0b4fa4bd25189fafb"><div class="ttname"><a href="#a5957a33410a2bbb0b4fa4bd25189fafb">AuthWindow::regStatus</a></div><div class="ttdeci">QLabel * regStatus</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00121">authwindow.h:121</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00113">authBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00111">authLogin</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00114">authStatus</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00120">regBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00121">regStatus</a> и <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00110">tabWidget</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 9 --></div>
+</div>
+
+</div>
+</div>
+<a id="a55776c8410a60e161c7ca0038ed7fc45" name="a55776c8410a60e161c7ca0038ed7fc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55776c8410a60e161c7ca0038ed7fc45">&#9670;&#160;</a></span>onReg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::onReg </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает нажатие кнопки регистрации. </p>
+<p>Проверяет заполненность полей и совпадение паролей, после чего отправляет команду регистрации на сервер. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">263</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
+<div class="line"><span class="lineno">  265</span>    QString displayName = <a class="code hl_variable" href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">regDisplayName</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  266</span>    QString login = <a class="code hl_variable" href="#a6ce78a6f54ef7835d331c1084a32f7d1">regLogin</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  267</span>    QString pass = <a class="code hl_variable" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  268</span>    QString confirmPass = <a class="code hl_variable" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a>-&gt;text().trimmed();</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">if</span>(displayName.isEmpty() || login.isEmpty() || pass.isEmpty() || confirmPass.isEmpty()) {</div>
+<div class="line"><span class="lineno">  271</span>        <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setText(<span class="stringliteral">&quot;Please fill in all fields!&quot;</span>);</div>
+<div class="line"><span class="lineno">  272</span>        <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  273</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  274</span>    }</div>
+<div class="line"><span class="lineno">  275</span> </div>
+<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">if</span>(pass != confirmPass) {</div>
+<div class="line"><span class="lineno">  277</span>        <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setText(<span class="stringliteral">&quot;Passwords do not match!&quot;</span>);</div>
+<div class="line"><span class="lineno">  278</span>        <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: red; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  279</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>    <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setText(<span class="stringliteral">&quot;Registering...&quot;</span>);</div>
+<div class="line"><span class="lineno">  283</span>    <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: orange; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  284</span>    <a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  285</span> </div>
+<div class="line"><span class="lineno">  286</span>    <a class="code hl_function" href="#aceb776b0d168dbc5e3c645b6716dcbf3">sendToServer</a>(</div>
+<div class="line"><span class="lineno">  287</span>        QString(<span class="stringliteral">&quot;reg&amp;%1&amp;%2&amp;%3&quot;</span>)</div>
+<div class="line"><span class="lineno">  288</span>            .arg(login)</div>
+<div class="line"><span class="lineno">  289</span>            .arg(pass)</div>
+<div class="line"><span class="lineno">  290</span>            .arg(displayName)</div>
+<div class="line"><span class="lineno">  291</span>        );</div>
+<div class="line"><span class="lineno">  292</span>}</div>
+<div class="ttc" id="aclass_auth_window_html_a1a2068d604043c9981371417deceda5e"><div class="ttname"><a href="#a1a2068d604043c9981371417deceda5e">AuthWindow::regConfirmPass</a></div><div class="ttdeci">QLineEdit * regConfirmPass</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00119">authwindow.h:119</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_a6ce78a6f54ef7835d331c1084a32f7d1"><div class="ttname"><a href="#a6ce78a6f54ef7835d331c1084a32f7d1">AuthWindow::regLogin</a></div><div class="ttdeci">QLineEdit * regLogin</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00116">authwindow.h:116</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_afa3172cf7462637265d1c8173c5fef70"><div class="ttname"><a href="#afa3172cf7462637265d1c8173c5fef70">AuthWindow::regPass</a></div><div class="ttdeci">QLineEdit * regPass</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00118">authwindow.h:118</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_aff11d44a7f6e2a15ad4c6d8840abf2ad"><div class="ttname"><a href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">AuthWindow::regDisplayName</a></div><div class="ttdeci">QLineEdit * regDisplayName</div><div class="ttdef"><b>Определения</b> <a href="../../de/d3b/authwindow_8h_source.html#l00117">authwindow.h:117</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00120">regBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00119">regConfirmPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00117">regDisplayName</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00116">regLogin</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00118">regPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00121">regStatus</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00239">sendToServer()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 10 --></div>
+</div>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 11 --></div>
+</div>
+
+</div>
+</div>
+<a id="aceb776b0d168dbc5e3c645b6716dcbf3" name="aceb776b0d168dbc5e3c645b6716dcbf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb776b0d168dbc5e3c645b6716dcbf3">&#9670;&#160;</a></span>sendToServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::sendToServer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отправляет строковую команду на сервер. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Команда или данные для отправки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00239">239</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  240</span>{</div>
+<div class="line"><span class="lineno">  241</span>    <a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a1d5875c5329637cd331d9efa06f5c3e1">SingletonClient::getInstance</a>()-&gt;<a class="code hl_function" href="../../d5/d82/class_singleton_client.html#a07876583f2f89d70ff241834ec6f3c93">sendMessageToServer</a>(data);</div>
+<div class="line"><span class="lineno">  242</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Sent:&quot;</span> &lt;&lt; data;</div>
+<div class="line"><span class="lineno">  243</span>}</div>
+<div class="ttc" id="aclass_singleton_client_html_a07876583f2f89d70ff241834ec6f3c93"><div class="ttname"><a href="../../d5/d82/class_singleton_client.html#a07876583f2f89d70ff241834ec6f3c93">SingletonClient::sendMessageToServer</a></div><div class="ttdeci">void sendMessageToServer(const QString &amp;query)</div><div class="ttdoc">Отправляет сообщение серверу.</div><div class="ttdef"><b>Определения</b> <a href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00061">AuthClient/singletonclient.cpp:61</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00031">SingletonClient::getInstance()</a> и <a class="el" href="../../d8/d17/_auth_client_2singletonclient_8cpp_source.html#l00061">SingletonClient::sendMessageToServer()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a>.</p>
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 12 --></div>
+</div>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 13 --></div>
+</div>
+
+</div>
+</div>
+<a id="add8d96dc062a1cb9a824965d5d7eb0c5" name="add8d96dc062a1cb9a824965d5d7eb0c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8d96dc062a1cb9a824965d5d7eb0c5">&#9670;&#160;</a></span>setupUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AuthWindow::setupUI </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт элементы интерфейса окна авторизации и регистрации. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a> строка <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">128</a></p>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>{</div>
+<div class="line"><span class="lineno">  130</span>    setWindowTitle(<span class="stringliteral">&quot;Authorization&quot;</span>);</div>
+<div class="line"><span class="lineno">  131</span>    setMinimumSize(400, 380);</div>
+<div class="line"><span class="lineno">  132</span>    setFixedSize(450, 420);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    QWidget* centralWidget = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  135</span>    QVBoxLayout* mainLayout = <span class="keyword">new</span> QVBoxLayout(centralWidget);</div>
+<div class="line"><span class="lineno">  136</span>    mainLayout-&gt;setSpacing(15);</div>
+<div class="line"><span class="lineno">  137</span>    mainLayout-&gt;setContentsMargins(20, 20, 20, 20);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// Title</span></div>
+<div class="line"><span class="lineno">  140</span>    QLabel* titleLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;WELCOME&quot;</span>);</div>
+<div class="line"><span class="lineno">  141</span>    titleLabel-&gt;setAlignment(Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  142</span>    titleLabel-&gt;setStyleSheet(<span class="stringliteral">&quot;font-size: 18px; font-weight: bold; color: #FF1493; margin: 10px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  143</span>    mainLayout-&gt;addWidget(titleLabel);</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <span class="comment">// Connection status</span></div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a> = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Connecting to server...&quot;</span>);</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setAlignment(Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: #FF69B4; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  149</span>    mainLayout-&gt;addWidget(<a class="code hl_variable" href="#a108f1032d00ec8f9aa39eafc71dced5b">connectionStatus</a>);</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// Tabs</span></div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_variable" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a> = <span class="keyword">new</span> QTabWidget();</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    <span class="comment">// === Login Tab ===</span></div>
+<div class="line"><span class="lineno">  155</span>    QWidget* authTab = <span class="keyword">new</span> QWidget();</div>
+<div class="line"><span class="lineno">  156</span>    QVBoxLayout* authLayout = <span class="keyword">new</span> QVBoxLayout(authTab);</div>
+<div class="line"><span class="lineno">  157</span>    authLayout-&gt;setSpacing(15);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    QFormLayout* authForm = <span class="keyword">new</span> QFormLayout();</div>
+<div class="line"><span class="lineno">  160</span>    authForm-&gt;setSpacing(10);</div>
+<div class="line"><span class="lineno">  161</span>    authForm-&gt;setLabelAlignment(Qt::AlignRight);</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    QLabel* loginLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Username:&quot;</span>);</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  165</span>    <a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Enter your username&quot;</span>);</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    QLabel* passLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Password:&quot;</span>);</div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_variable" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  169</span>    <a class="code hl_variable" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a>-&gt;setEchoMode(QLineEdit::Password);</div>
+<div class="line"><span class="lineno">  170</span>    <a class="code hl_variable" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Enter your password&quot;</span>);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    authForm-&gt;addRow(loginLabel, <a class="code hl_variable" href="#a8d1d9fc53e28cb42b8d574343d134bef">authLogin</a>);</div>
+<div class="line"><span class="lineno">  173</span>    authForm-&gt;addRow(passLabel, <a class="code hl_variable" href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">authPass</a>);</div>
+<div class="line"><span class="lineno">  174</span>    authLayout-&gt;addLayout(authForm);</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;LOGIN&quot;</span>);</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>-&gt;setCursor(Qt::PointingHandCursor);</div>
+<div class="line"><span class="lineno">  178</span>    authLayout-&gt;addWidget(<a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>, 0, Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a> = <span class="keyword">new</span> QLabel();</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setAlignment(Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  182</span>    <a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: #FF69B4; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  183</span>    authLayout-&gt;addWidget(<a class="code hl_variable" href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">authStatus</a>);</div>
+<div class="line"><span class="lineno">  184</span>    authLayout-&gt;addStretch();</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="comment">// === Register Tab ===</span></div>
+<div class="line"><span class="lineno">  187</span>    QWidget* regTab = <span class="keyword">new</span> QWidget();</div>
+<div class="line"><span class="lineno">  188</span>    QVBoxLayout* regLayout = <span class="keyword">new</span> QVBoxLayout(regTab);</div>
+<div class="line"><span class="lineno">  189</span>    regLayout-&gt;setSpacing(15);</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>    QFormLayout* regForm = <span class="keyword">new</span> QFormLayout();</div>
+<div class="line"><span class="lineno">  192</span>    regForm-&gt;setSpacing(10);</div>
+<div class="line"><span class="lineno">  193</span>    regForm-&gt;setLabelAlignment(Qt::AlignRight);</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    QLabel* regNameLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Player Name:&quot;</span>);</div>
+<div class="line"><span class="lineno">  196</span>    <a class="code hl_variable" href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">regDisplayName</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  197</span>    <a class="code hl_variable" href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">regDisplayName</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Your beautiful in-game name&quot;</span>);</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>    QLabel* regLoginLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Login:&quot;</span>);</div>
+<div class="line"><span class="lineno">  200</span>    <a class="code hl_variable" href="#a6ce78a6f54ef7835d331c1084a32f7d1">regLogin</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="#a6ce78a6f54ef7835d331c1084a32f7d1">regLogin</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Choose a login&quot;</span>);</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    QLabel* regPassLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Password:&quot;</span>);</div>
+<div class="line"><span class="lineno">  204</span>    <a class="code hl_variable" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  205</span>    <a class="code hl_variable" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a>-&gt;setEchoMode(QLineEdit::Password);</div>
+<div class="line"><span class="lineno">  206</span>    <a class="code hl_variable" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Choose a password&quot;</span>);</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>    QLabel* regConfirmLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Confirm Password:&quot;</span>);</div>
+<div class="line"><span class="lineno">  209</span>    <a class="code hl_variable" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><span class="lineno">  210</span>    <a class="code hl_variable" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a>-&gt;setEchoMode(QLineEdit::Password);</div>
+<div class="line"><span class="lineno">  211</span>    <a class="code hl_variable" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a>-&gt;setPlaceholderText(<span class="stringliteral">&quot;Confirm your password&quot;</span>);</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    regForm-&gt;addRow(regNameLabel, <a class="code hl_variable" href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">regDisplayName</a>);</div>
+<div class="line"><span class="lineno">  214</span>    regForm-&gt;addRow(regLoginLabel, <a class="code hl_variable" href="#a6ce78a6f54ef7835d331c1084a32f7d1">regLogin</a>);</div>
+<div class="line"><span class="lineno">  215</span>    regForm-&gt;addRow(regPassLabel, <a class="code hl_variable" href="#afa3172cf7462637265d1c8173c5fef70">regPass</a>);</div>
+<div class="line"><span class="lineno">  216</span>    regForm-&gt;addRow(regConfirmLabel, <a class="code hl_variable" href="#a1a2068d604043c9981371417deceda5e">regConfirmPass</a>);</div>
+<div class="line"><span class="lineno">  217</span>    regLayout-&gt;addLayout(regForm);</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;REGISTER&quot;</span>);</div>
+<div class="line"><span class="lineno">  220</span>    <a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>-&gt;setCursor(Qt::PointingHandCursor);</div>
+<div class="line"><span class="lineno">  221</span>    regLayout-&gt;addWidget(<a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>, 0, Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>    <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a> = <span class="keyword">new</span> QLabel();</div>
+<div class="line"><span class="lineno">  224</span>    <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setAlignment(Qt::AlignCenter);</div>
+<div class="line"><span class="lineno">  225</span>    <a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;color: #FF69B4; font-size: 11px;&quot;</span>);</div>
+<div class="line"><span class="lineno">  226</span>    regLayout-&gt;addWidget(<a class="code hl_variable" href="#a5957a33410a2bbb0b4fa4bd25189fafb">regStatus</a>);</div>
+<div class="line"><span class="lineno">  227</span>    regLayout-&gt;addStretch();</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>    <a class="code hl_variable" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a>-&gt;addTab(authTab, <span class="stringliteral">&quot;Login&quot;</span>);</div>
+<div class="line"><span class="lineno">  230</span>    <a class="code hl_variable" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a>-&gt;addTab(regTab, <span class="stringliteral">&quot;Register&quot;</span>);</div>
+<div class="line"><span class="lineno">  231</span>    mainLayout-&gt;addWidget(<a class="code hl_variable" href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">tabWidget</a>);</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    setCentralWidget(centralWidget);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>    connect(<a class="code hl_variable" href="#abf7e294c205cce29861cf49e95b0a28a">authBtn</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#acfa816a81344946693fb40cc0e9d2dd3">AuthWindow::onAuth</a>);</div>
+<div class="line"><span class="lineno">  236</span>    connect(<a class="code hl_variable" href="#a1cbb9243fc1764d7321e510562525aa4">regBtn</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a55776c8410a60e161c7ca0038ed7fc45">AuthWindow::onReg</a>);</div>
+<div class="line"><span class="lineno">  237</span>}</div>
+<div class="ttc" id="aclass_auth_window_html_a55776c8410a60e161c7ca0038ed7fc45"><div class="ttname"><a href="#a55776c8410a60e161c7ca0038ed7fc45">AuthWindow::onReg</a></div><div class="ttdeci">void onReg()</div><div class="ttdoc">Обрабатывает нажатие кнопки регистрации.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00263">authwindow.cpp:263</a></div></div>
+<div class="ttc" id="aclass_auth_window_html_acfa816a81344946693fb40cc0e9d2dd3"><div class="ttname"><a href="#acfa816a81344946693fb40cc0e9d2dd3">AuthWindow::onAuth</a></div><div class="ttdeci">void onAuth()</div><div class="ttdoc">Обрабатывает нажатие кнопки входа.</div><div class="ttdef"><b>Определения</b> <a href="../../d3/daa/authwindow_8cpp_source.html#l00245">authwindow.cpp:245</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00113">authBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00111">authLogin</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00112">authPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00114">authStatus</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00123">connectionStatus</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00120">regBtn</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00119">regConfirmPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00117">regDisplayName</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00116">regLogin</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00118">regPass</a>, <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00121">regStatus</a> и <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00110">tabWidget</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00020">AuthWindow()</a>.</p>
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызовов:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 14 --></div>
+</div>
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Граф вызова функции:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 15 --></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="abf7e294c205cce29861cf49e95b0a28a" name="abf7e294c205cce29861cf49e95b0a28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7e294c205cce29861cf49e95b0a28a">&#9670;&#160;</a></span>authBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* AuthWindow::authBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00113">113</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a8d1d9fc53e28cb42b8d574343d134bef" name="a8d1d9fc53e28cb42b8d574343d134bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1d9fc53e28cb42b8d574343d134bef">&#9670;&#160;</a></span>authLogin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::authLogin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00111">111</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a673e0f1bca203c2dea1bcc3a63c9b0e2" name="a673e0f1bca203c2dea1bcc3a63c9b0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673e0f1bca203c2dea1bcc3a63c9b0e2">&#9670;&#160;</a></span>authPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::authPass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00112">112</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a52411b9ca82e2c6ec2f37d02dbe2c3f1" name="a52411b9ca82e2c6ec2f37d02dbe2c3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52411b9ca82e2c6ec2f37d02dbe2c3f1">&#9670;&#160;</a></span>authStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* AuthWindow::authStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00114">114</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00245">onAuth()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a37fe604a4d5267850ae4dff37a267142" name="a37fe604a4d5267850ae4dff37a267142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37fe604a4d5267850ae4dff37a267142">&#9670;&#160;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString AuthWindow::buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="a108f1032d00ec8f9aa39eafc71dced5b" name="a108f1032d00ec8f9aa39eafc71dced5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108f1032d00ec8f9aa39eafc71dced5b">&#9670;&#160;</a></span>connectionStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* AuthWindow::connectionStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00123">123</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00401">onConnected()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00408">onDisconnected()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00415">onError()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a1cbb9243fc1764d7321e510562525aa4" name="a1cbb9243fc1764d7321e510562525aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cbb9243fc1764d7321e510562525aa4">&#9670;&#160;</a></span>regBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* AuthWindow::regBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00120">120</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a1a2068d604043c9981371417deceda5e" name="a1a2068d604043c9981371417deceda5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2068d604043c9981371417deceda5e">&#9670;&#160;</a></span>regConfirmPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::regConfirmPass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00119">119</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="aff11d44a7f6e2a15ad4c6d8840abf2ad" name="aff11d44a7f6e2a15ad4c6d8840abf2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff11d44a7f6e2a15ad4c6d8840abf2ad">&#9670;&#160;</a></span>regDisplayName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::regDisplayName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00117">117</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a6ce78a6f54ef7835d331c1084a32f7d1" name="a6ce78a6f54ef7835d331c1084a32f7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce78a6f54ef7835d331c1084a32f7d1">&#9670;&#160;</a></span>regLogin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::regLogin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00116">116</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="afa3172cf7462637265d1c8173c5fef70" name="afa3172cf7462637265d1c8173c5fef70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3172cf7462637265d1c8173c5fef70">&#9670;&#160;</a></span>regPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* AuthWindow::regPass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00118">118</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a5957a33410a2bbb0b4fa4bd25189fafb" name="a5957a33410a2bbb0b4fa4bd25189fafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5957a33410a2bbb0b4fa4bd25189fafb">&#9670;&#160;</a></span>regStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* AuthWindow::regStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00121">121</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a>, <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00263">onReg()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a1c4dcc2a6a2a18260e15a926f9f88cb3" name="a1c4dcc2a6a2a18260e15a926f9f88cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4dcc2a6a2a18260e15a926f9f88cb3">&#9670;&#160;</a></span>tabWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTabWidget* AuthWindow::tabWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a> строка <a class="el" href="../../de/d3b/authwindow_8h_source.html#l00110">110</a></p>
+
+<p class="reference">Используется в <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00294">onReadyRead()</a> и <a class="el" href="../../d3/daa/authwindow_8cpp_source.html#l00128">setupUI()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="../../de/d3b/authwindow_8h_source.html">authwindow.h</a></li>
+<li><a class="el" href="../../d3/daa/authwindow_8cpp_source.html">authwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d7/dfc/class_auth_window.html">AuthWindow</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Qt / C++
+*.o
+*.obj
+*.pro.user
+*.pro.user.*
+.qmake.stash
+.qtc_clangd/
+.qtcreator/
+Makefile
+Makefile.Debug
+Makefile.Release
+moc_*.cpp
+moc_*.h
+moc_predefs.h
+
+# Executable files
+*.exe
+*.dll
+
+# Build folders
+*/build/
+*/release/
+*/debug/
+
+# IDE
+.vscode/
+.idea/
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
